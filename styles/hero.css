@@ -13,6 +13,9 @@
 
 .btn {
 	grid-row: 4;
+
+	background-color: var(--primary);
+	color: var(--text-invert);
 }
 
 .btn--secondary {
