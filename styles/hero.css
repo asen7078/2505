@@ -1,0 +1,25 @@
+.hero {
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr;
+	max-width: 1228px;
+
+	background-color: aquamarine;
+}
+
+.hero * {
+	grid-column: span 2;
+}
+
+.btn {
+	grid-row: 4;
+}
+
+.btn--secondary {
+	grid-column: 2;
+}
+
+.hero__image {
+	grid-column: 3;
+	grid-row: 1 / 5;
+}

@@ -1,0 +1,31 @@
+.main-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+.main-menu__list {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: 16px;
+
+	list-style: none;
+}
+
+.main-menu__link {
+	padding: 4px 8px;
+
+	text-decoration: none;
+	color: var(--text-main);
+}
+
+.main-menu__link--folder {
+	padding-right: 28px;
+	background-image: url(./chevron-down.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+}
