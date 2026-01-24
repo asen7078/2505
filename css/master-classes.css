@@ -1,0 +1,75 @@
+.master-classes {
+  position: relative;
+	margin: 0 auto;
+  margin-top: 110px;
+	max-width: 1228px;
+}
+
+.master-classes__heading {
+  margin: 0;
+	margin-bottom: 15px;
+
+	font-family: 'Prosto One', Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 42px;
+	line-height: 52px;
+	color: var(--primary);
+}
+
+.master-classes__paragraph {
+  font-family: 'Railway', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-main);
+}
+
+.master-classes__link {
+  position: absolute;
+  top: 10px;
+  right: 0;
+
+	padding-right: 30px;
+
+	text-decoration: none;
+	color: var(--secondary);
+  background-image: url('../img/link-icon.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.master-classes__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.master-classes__item {
+  padding-top: 292px;
+
+  background-image: url('../img/master-classes-group.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.master-classes__item--individual {
+  background-image: url('../img/master-classes-individual.jpg');
+}
+
+.master-classes__item--date {
+  background-image: url('../img/master-classes-date.jpg');
+}
+
+.master-classes__item--celebration {
+  background-image: url('../img/master-classes-celebration.jpg');
+}
+
+.master-classes__item-heading {
+  font-family: 'Prosto One', Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: var(--text-main);
+}
+
+.master-classes__item-link {
+  align-self: flex-end;
+}

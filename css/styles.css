@@ -1,6 +1,7 @@
 @import url(main-menu.css);
 @import url(hero.css);
 @import url(trust.css);
+@import url(master-classes.css);
 
 :root {
 	--bg-dark: #1D3305;
@@ -59,4 +60,11 @@ a:active, button:active {
 .btn--secondary {
 	color: var(--secondary);
 	background-color: transparent;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
 }
