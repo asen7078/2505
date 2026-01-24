@@ -1,5 +1,6 @@
 @import url(main-menu.css);
 @import url(hero.css);
+@import url(trust.css);
 
 :root {
 	--bg-dark: #1D3305;
@@ -17,7 +18,9 @@ body {
 	padding: 0;
 	min-height: 100vh;
 
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
 	color: var(--text-main);
+
 	background-color: var(--bg-base);
 }
 
