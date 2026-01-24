@@ -1,0 +1,46 @@
+.hero {
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr;
+	max-width: 1228px;
+}
+
+.hero__heading {
+	font-family: 'Prosto One', Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 78px;
+	line-height: 95px;
+	color: var(--primary);
+}
+
+.hero__lead {
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 30px;
+	color: var(--secondary);
+}
+
+.hero__description {
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	color: var(--bg-dark);
+}
+
+.hero * {
+	grid-column: span 2;
+}
+
+.hero__image {
+	grid-column: 3;
+	grid-row: 1 / 5;
+}
+
+.hero .btn {
+	grid-row: 4;
+
+	padding: 8px 15px;
+}
+
+.hero .btn--secondary {
+	grid-column: 2;
+}

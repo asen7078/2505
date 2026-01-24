@@ -1,5 +1,5 @@
-@import url(./styles/main-menu.css);
-@import url(./styles/hero.css);
+@import url(main-menu.css);
+@import url(hero.css);
 
 :root {
 	--bg-dark: #1D3305;
@@ -36,3 +36,24 @@ a:active, button:active {
 	max-width: 1228px;
 }
 
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 4px 8px;
+
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	text-align: center;
+	color: var(--text-invert);
+	background-color: var(--primary);
+	text-decoration: none;
+
+	border-width: 1.5px;
+	border-color: var(--secondary);
+	border-style: solid;
+}
+
+.btn--secondary {
+	color: var(--secondary);
+	background-color: transparent;
+}
