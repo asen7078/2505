@@ -2,6 +2,9 @@
 @import url(hero.css);
 @import url(trust.css);
 @import url(master-classes.css);
+@import url(breadcrumbs.css);
+@import url(catalog.css);
+@import url(footer.css);
 
 :root {
 	--bg-dark: #1D3305;
@@ -25,6 +28,23 @@ body {
 	background-color: var(--bg-base);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+	text-decoration: none;
+
+}
+
 a:hover, button:hover {
 	opacity: 0.9
 }
@@ -33,11 +53,16 @@ a:active, button:active {
 	opacity: 0.75
 }
 
-.wrapper {
-	display: flex;
-	margin: 0 auto;
-	justify-content: center;
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
 	max-width: 1228px;
+	margin: 0 auto;
+  padding-inline: clamp(20px, 3vw, 40px);
 }
 
 .btn {
@@ -62,9 +87,15 @@ a:active, button:active {
 	background-color: transparent;
 }
 
-.list-reset {
-  margin: 0;
-  padding: 0;
 
-  list-style-type: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
+
