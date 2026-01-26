@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гончарная студия 2505 ceramics — Каталог</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prosto+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <nav class="main-menu container">
+    <a href="index.html">
+      <img src="logo.png" width="48" height="48" alt="Логотип">
+    </a>
+    <ul class="main-menu__list">
+      <li><a class="main-menu__link main-menu__link--folder" href="">Мастер-классы</a></li>
+      <li><a class="main-menu__link" href="">Сертификаты</a></li>
+      <li><a class="main-menu__link" href="#">Каталог</a></li>
+      <li><a class="main-menu__link" href="">На заказ</a></li>
+      <li><a class="main-menu__link" href="">О нас</a></li>
+      <li><a class="main-menu__link" href="">Контакты</a></li>
+    </ul>
+    <a class="main-menu__link" href="">Корзина (<span>0</span>)</a>
+  </nav>
+
+  <main class="catalog container">
+    <ul class="catalog__breadcrumbs breadcrumbs">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link breadcrumbs__link--color" href="index.html"> Главная
+        </a>
+      </li>
+      <li class="breadcrumbs__item">
+        <span class="breadcrumbs__slash breadcrumbs__slash--color">/</span>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link">Каталог</a>
+      </li>
+    </ul>
+
+    <h1 class="catalog__title">Каталог
+      <span class="catalog__title--number">(36)</span>
+    </h1>
+
+    <section class="catalog__wrapper">
+
+      <form method="GET" action="https://echo.htmlacademy.ru/" class="catalog__form">
+
+        <h2 class="filter-heading">Фильтр:</h2>
+        <div class="catalog__form-wrapper">
+          <fieldset class="filter-fieldset filter-fieldset-products">
+
+            <legend class="filter-legend filter-legend-products">Тип изделия:</legend>
+
+            <input class="filter-checkbox-input" name="product-1" type="checkbox" id="product-1" checked>
+            <label class="filter-checkbox-label" for="product-1">Тарелки</label>
+
+            <input class="filter-checkbox-input" name="product-2" type="checkbox" id="product-2">
+            <label class="filter-checkbox-label" for="product-2">Чашки и кружки</label>
+
+            <input class="filter-checkbox-input" name="product-3" type="checkbox" id="product-3" checked>
+            <label class="filter-checkbox-label" for="product-3">Вазы</label>
+
+            <input class="filter-checkbox-input" name="product-4" type="checkbox" id="product-4">
+            <label class="filter-checkbox-label" for="product-4">Салатники и боулы</label>
+
+            <input class="filter-checkbox-input" name="product-5" type="checkbox" id="product-5">
+            <label class="filter-checkbox-label" for="product-5">Маслёнки</label>
+
+            <input class="filter-checkbox-input" name="product-6" type="checkbox" id="product-6">
+            <label class="filter-checkbox-label" for="product-6">Пашотницы</label>
+
+            <input class="filter-checkbox-input" name="product-7" type="checkbox" id="product-7">
+            <label class="filter-checkbox-label" for="product-7">Соусники</label>
+
+            <input class="filter-checkbox-input" name="product-8" type="checkbox" id="product-8">
+            <label class="filter-checkbox-label" for="product-8">Кувшины</label>
+
+            <input class="filter-checkbox-input" name="product-9" type="checkbox" id="product-9">
+            <label class="filter-checkbox-label" for="product-9">Сервировочные доски</label>
+
+          </fieldset>
+
+          <fieldset class="filter-fieldset filter-fieldset-power">
+
+            <legend class="filter-legend filter-legend-power">Коллекция</legend>
+
+            <input class="filter-checkbox-input" name="manufacturer-1" type="checkbox" id="manufacturer-1" checked>
+            <label class="filter-checkbox-label" for="manufacturer-1">botanic</label>
+
+            <input class="filter-checkbox-input" name="manufacturer-2" type="checkbox" id="manufacturer-2">
+            <label class="filter-checkbox-label" for="manufacturer-2">ipanema</label>
+
+            <input class="filter-checkbox-input" name="manufacturer-3" type="checkbox" id="manufacturer-3" checked>
+            <label class="filter-checkbox-label" for="manufacturer-3">romantic</label>
+
+            <input class="filter-checkbox-input" name="manufacturer-4" type="checkbox" id="manufacturer-4">
+            <label class="filter-checkbox-label" for="manufacturer-4">flowers</label>
+
+            <input class="filter-checkbox-input" name="manufacturer-5" type="checkbox" id="manufacturer-5">
+            <label class="filter-checkbox-label" for="manufacturer-5">classic</label>
+
+          </fieldset>
+        </div>
+      </form>
+
+      <div class="catalog__item">
+
+        <ul class="products-catalog-list clear-ul">
+
+          <li class="products-item">
+            <div class="products-image-wrapper">
+              <img class="products-image" src="img/product-1.jpg" width="292" height="292" alt="Тарелка с лошадками">
+            </div>
+            <div class="products-price-wrapper">
+              <a class="products-price products-item-title" href="#">тарелка с лошадками</a>
+              <a class="products-price product-price-new" href="#">2 000 ₽</a>
+            </div>
+            <a href="#" class="products-button products-buy">В корзину</a>
+          </li>
+
+          <li class="products-item">
+            <div class="products-image-wrapper">
+              <img class="products-image" src="img/product-2.jpg" width="292" height="292" alt="Кружка с сердечком">
+            </div>
+            <div class="products-price-wrapper">
+              <a class="products-price products-item-title" href="#">Кружка</a>
+              <a class="products-price product-price-new" href="#">2 100 ₽</a>
+            </div>
+            <a href="#" class="products-button products-buy">В корзину</a>
+          </li>
+
+          <li class="products-item">
+            <div class="products-image-wrapper">
+              <img class="products-image" src="img/product-3.jpg" width="292" height="292" alt="Тарелка под пасту">
+            </div>
+            <div class="products-price-wrapper">
+              <a class="products-price products-item-title" href="#">Тарелка под пасту</a>
+              <a class="products-price product-price-new" href="#">2 500 ₽</a>
+            </div>
+            <a href="#" class="products-button products-buy">В корзину</a>
+          </li>
+
+          <li class="products-item">
+            <div class="products-image-wrapper">
+              <img class="products-image" src="img/product-4.jpg" width="292" height="292" alt="Масленка">
+            </div>
+            <div class="products-price-wrapper">
+              <a class="products-price products-item-title" href="#">Масленка</a>
+              <a class="products-price product-price-new" href="#">2 500 ₽</a>
+            </div>
+            <a href="#" class="products-button products-buy">В корзину</a>
+          </li>
+
+          <li class="products-item">
+            <div class="products-image-wrapper">
+              <img class="products-image" src="img/product-5.jpg" width="292" height="292" alt="Сервировочная тарелка">
+            </div>
+            <div class="products-price-wrapper">
+              <a class="products-price products-item-title" href="#">Сервировочная тарелка</a>
+              <a class="products-price product-price-new" href="#">2 100 ₽</a>
+            </div>
+            <a href="#" class="products-button products-buy">В корзину</a>
+          </li>
+
+          <li class="products-item">
+            <div class="products-image-wrapper">
+              <img class="products-image" src="img/product-6.jpg" width="292" height="292" alt="Пашотница">
+            </div>
+            <div class="products-price-wrapper">
+              <a class="products-price products-item-title" href="#">Пашотница</a>
+              <a class="products-price product-price-new" href="#">1 800 ₽</a>
+            </div>
+            <a href="#" class="products-button products-buy">В корзину</a>
+          </li>
+
+          <li class="products-item">
+            <div class="products-image-wrapper">
+              <img class="products-image" src="img/product-7.jpg" width="292" height="292" alt="Соусник">
+            </div>
+            <div class="products-price-wrapper">
+              <a class="products-price products-item-title" href="#">Соусник</a>
+              <a class="products-price product-price-new" href="#">от 600 ₽</a>
+            </div>
+            <a href="#" class="products-button products-buy">В корзину</a>
+          </li>
+
+          <li class="products-item">
+            <div class="products-image-wrapper">
+              <img class="products-image" src="img/product-8.jpg" width="292" height="292" alt="Ваза">
+            </div>
+            <div class="products-price-wrapper">
+              <a class="products-price products-item-title" href="#">Ваза</a>
+              <a class="products-price product-price-new" href="#">4 500 ₽</a>
+            </div>
+            <a href="#" class="products-button products-buy">В корзину</a>
+          </li>
+
+          <li class="products-item">
+            <div class="products-image-wrapper">
+              <img class="products-image" src="img/product-9.jpg" width="292" height="292" alt="Молочник/кувшин">
+            </div>
+            <div class="products-price-wrapper">
+              <a class="products-price products-item-title" href="#">Молочник/кувшин</a>
+              <a class="products-price product-price-new" href="#">2 300 ₽</a>
+            </div>
+            <a href="#" class="products-button products-buy">В корзину</a>
+          </li>
+        </ul>
+
+        <ul class="pagination clear-ul">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-link-end">
+              <svg  class="products-image" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.75 0.75L6.75 6.75L12.75 0.75" stroke="#504F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <!-- <img class="products-image" src="img/icon-chevron-down.svg" width="14" height="8" alt="Стрелка назад"> -->
+            </a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-link-current" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-link-next">
+              <svg  class="products-image" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.75 0.75L6.75 6.75L12.75 0.75" stroke="#504F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <!-- <img class="products-image" src="img/icon-chevron-down.svg" width="14" height="8" alt="Стрелка назад"> -->
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-wrapper container">
+
+      <div class="footer-address">
+        <p>Ежедневно с 11:00 до 19:00</p>
+        <address class="contacts-text">
+          Вологда, Торговая площадь, 1
+          <a href="tel:+79005347137">+7 900 534-71-37</a>
+        </address>
+        <img class="contacts-image contacts-image-bg" src="img/footer-bg.png" width="493" height="264" alt="Фоновая картинка">
+
+      </div>
+
+      <ul class="menu-secondary clear-ul">
+        <li><a class="menu-secondary-item" href="#">О мастер-классах</a></li>
+        <li><a class="menu-secondary-item" href="#">Сертификаты</a></li>
+        <li><a class="menu-secondary-item menu-secondary-item-active" href="catalog.html">Каталог</a></li>
+        <li><a class="menu-secondary-item" href="#">На заказ</a></li>
+        <li><a class="menu-secondary-item" href="#">О нас</a></li>
+        <li><a class="menu-secondary-item" href="#">Контакты</a></li>
+      </ul>
+
+      <div class="footer-right">
+        <h3 class="text-widget text-widget-copyright">
+          Мы в соцсетях
+        </h3>
+        <ul class="menu-social clear-ul">
+          <li><a class="menu-social-link menu-social-link-tg" href="#" aria-label="Telegram">Telegram</a></li>
+          <li><a class="menu-social-link menu-social-link-vk" href="#" aria-label="ВКонтакте">ВКонтакте</a></li>
+        </ul>
+        <img class="contacts-image contacts-image-logo" src="img/footer-logo.svg" width="369" height="153" alt="Логотип">
+
+      </div>
+
+    </div>
+  </footer>
+</body>
+
+</html>

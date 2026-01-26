@@ -1,0 +1,32 @@
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-block: 50px 30px;
+
+}
+
+.breadcrumbs__item {
+  font-family: Raleway;
+  font-size: 14px;
+  line-height: 100%;
+
+}
+
+.breadcrumbs__link--color,
+.breadcrumbs__slash--color {
+  color: #999999;
+}
+
+.breadcrumbs-section {
+  margin-top: 21px;
+}
+
+.breadcrumbs-link {
+  display: block;
+
+}
+
+.breadcrumbs-link-home {
+
+}

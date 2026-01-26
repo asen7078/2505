@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2505 - Главная</title>
-		<link rel="stylesheet" href="styles.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Гончарная студия 2505 ceramics — Главная</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Prosto+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<div class="wrapper">
-	<nav class="main-menu">
-		<a href="">
+	<nav class="main-menu container">
+		<a  href="#">
 			<img src="logo.png" width="48" height="48" alt="Логотип">
 		</a>
 		<ul class="main-menu__list">
 			<li><a class="main-menu__link main-menu__link--folder" href="">Мастер-классы</a></li>
 			<li><a class="main-menu__link" href="">Сертификаты</a></li>
-			<li><a class="main-menu__link" href="">Каталог</a></li>
+			<li><a class="main-menu__link" href="catalog.html">Каталог</a></li>
 			<li><a class="main-menu__link" href="">На заказ</a></li>
 			<li><a class="main-menu__link" href="">О нас</a></li>
 			<li><a class="main-menu__link" href="">Контакты</a></li>
 		</ul>
 		<a class="main-menu__link" href="">Корзина (<span>0</span>)</a>
 	</nav>
-	</div>
 	<main>
 		<section class="hero">
 			<h1 class="hero__heading">Гончарная студия</h1>
@@ -35,10 +35,211 @@
 			<p class="hero__description">
 				Уютное пространство в центре Вологды с мастер-классами, керамикой на заказ и изделиями ручной работы. Форматы для знакомства, творчества и особых поводов.
 			</p>
-			<a class="hero__btn btn" href="">Перейти в каталог</a>
-			<a class="hero__btn btn btn--secondary" href="">Выбрать мастер-класс</a>
-			<img class="hero__image" src="./showcase.jpg" alt="">
+			<a class="hero__btn btn" href="catalog.html">Перейти в каталог</a>
+			<a class="hero__btn btn btn--secondary" href="master-class.html">Выбрать мастер-класс</a>
 		</section>
+    <div class="trust">
+    <section class="trust__wrapper">
+      <h2 class="trust__heading">Почему нам доверяют</h2>
+      <a class="trust__link" href="">О нас</a>
+      <article class="trust__article trust__article--history">
+        <h3 class="trust__article-heading">Мастерская с историей</h3>
+        <p class="trust__article-paragraph">
+          Работаем с глиной с 2017 года. Из небольшой студии выросли в узнаваемую мастерскую и в 2024 году переехали в центр Вологды.
+        </p>
+      </article>
+      <article class="trust__article trust__article--comfort">
+        <h3 class="trust__article-heading">Комфортно каждому</h3>
+        <p class="trust__article-paragraph">
+          У нас будет интересно и тем, кто впервые работает с глиной, и опытным мастерам. Мы открыты к разным идеям и всегда помогаем довести их до результата.
+        </p>
+      </article>
+      <article class="trust__article trust__article--soul">
+        <h3 class="trust__article-heading">Создаём с душой</h3>
+        <p class="trust__article-paragraph">
+          Все изделия создаются вручную, с заботой и вниманием к деталям. Каждая кружка или тарелка — это небольшая история, которую вы забираете с собой.
+        </p>
+      </article>
+    </section>
+    </div>
+    <section class="master-classes">
+      <h2 class="master-classes__heading">Мастер-классы</h2>
+      <p class="master-classes__paragraph">В нашей студии вы можете создать изделия из глины своими руками, наслаждаясь процессом и тёплой атмосферой творчества.</p>
+      <a class="master-classes__link" href="">Мастер-классы</a>
+      <ul class="master-classes__list list-reset">
+        <li class="master-classes__item">
+          <h3 class="master-classes__item-heading">Групповой</h3>
+          <p class="master-classes__item-paragraph">
+            Занятие по расписанию в небольшой компании, с поддержкой мастера и общей атмосферой творчества.
+          </p>
+          <a class="master-classes__item-link btn" href="#">Выбрать мастер-класс</a>
+        </li>
+        <li class="master-classes__item master-classes__item--individual">
+          <h3 class="master-classes__item-heading">Индивидуальный</h3>
+          <p class="master-classes__item-paragraph">
+            Формат с мастером, где всё внимание направлено на ваши идеи, комфортный темп и процесс без спешки.
+          </p>
+          <a class="master-classes__item-link btn" href="#">Выбрать мастер-класс</a>
+        </li>
+        <li class="master-classes__item master-classes__item--date">
+          <h3 class="master-classes__item-heading">Свидание</h3>
+          <p class="master-classes__item-paragraph">
+            Формат для двоих — возможность провести время вместе, создавая изделия из глины в комфортной обстановке.
+          </p>
+          <a class="master-classes__item-link btn" href="#">Выбрать мастер-класс</a>
+        </li>
+        <li class="master-classes__item master-classes__item--celebration">
+          <h3 class="master-classes__item-heading">Праздник</h3>
+          <p class="master-classes__item-paragraph">
+            Отметьте важный день в гончарной мастерской, где процесс важнее результата.
+          </p>
+          <a class="master-classes__item-link btn" href="#">Выбрать мастер-класс</a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Популярные изделия</h2>
+      <a href="">Перейти в каталог</a>
+      <ul>
+        <li>
+          <img src="" alt="Светлая тарелка покрытая глазурью и редкими миниатюрными рисунками алых цветов" width="396" height="393">
+          <h3>Тарелка Алый Цветочек</h3>
+          <button>В корзину</button>
+        </li>
+        <li>
+          <img src="" alt="Светлая чашка покрытая глазурью и редкими миниатюрными рисунками алых цветов" width="188" height="197">
+          <h3>Чашка Алый Цветочек</h3>
+          <button>В корзину</button>
+        </li>
+        <li>
+          <img src="" alt="Светлая чашка покрытая глазурью и редкими миниатюрными рисунками васильковых цветов" width="292" height="304">
+          <h3>Чашка из серии «Ipanema»</h3>
+          <button>В корзину</button>
+        </li>
+        <li>
+          <img src="" alt="" width="292" height="395">
+          <h3>Тарелки с лошадками</h3>
+          <button>В корзину</button>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Сертификат</h2>
+      <p>
+        Подарите близким или себе радость творчества и уникальные изделия ручной работы. Сертификат открывает доступ к занятиям, где каждый сможет создать своё изделие и увезти домой тёплые впечатления.
+      </p>
+      <a href="">Приобрести сертификат</a>
+    </section>
+    <section>
+      <h2>Керамика на заказ</h2>
+      <article>
+        <h3>Для бизнеса</h3>
+        <p>
+          Изготавливаем керамику для ресторанов, кафе и брендов.
+        </p>
+        <p>
+          Работаем с сериями, учитываем стиль проекта и помогаем создать изделия, которые дополняют пространство и концепцию.
+        </p>
+        <a href="">Обсудить заказ</a>
+      </article>
+      <article>
+        <h3>Для себя</h3>
+        <p>
+          Создаём керамику по индивидуальным запросам для дома или в подарок.
+        </p>
+        <p>
+Форма, цвет и характер изделия подбираются под вашу идею, чтобы вещь стала по‑настоящему личной и уютной.
+        </p>
+        <a href="">Обсудить заказ</a>
+      </article>
+    </section>
+    <section>
+      <h2>Часто задаваемые вопросы</h2>
+      <details>
+        <summary>Нужен ли опыт?</summary>
+        Опыт не требуется. Мы всё объясняем и помогаем на каждом этапе, даже если вы впервые работаете с глиной.
+      </details>
+      <details>
+        <summary>Сколько человек участвует в занятии?</summary>
+        Опыт не требуется. Мы всё объясняем и помогаем на каждом этапе, даже если вы впервые работаете с глиной.
+      </details>
+      <details>
+        <summary>Сколько длится занятие?</summary>
+        Опыт не требуется. Мы всё объясняем и помогаем на каждом этапе, даже если вы впервые работаете с глиной.
+      </details>
+      <details>
+        <summary>Когда можно забрать готовое изделие?</summary>
+        Опыт не требуется. Мы всё объясняем и помогаем на каждом этапе, даже если вы впервые работаете с глиной.
+      </details>
+      <details>
+        <summary>Все материалы входят в стоимость?</summary>
+        Опыт не требуется. Мы всё объясняем и помогаем на каждом этапе, даже если вы впервые работаете с глиной.
+      </details>
+      <details>
+        <summary>Можно ли отправить готовое изделие в другой город?</summary>
+        Опыт не требуется. Мы всё объясняем и помогаем на каждом этапе, даже если вы впервые работаете с глиной.
+      </details>
+      <details>
+        <summary>Можно ли прийти с ребёнком?</summary>
+        Опыт не требуется. Мы всё объясняем и помогаем на каждом этапе, даже если вы впервые работаете с глиной.
+      </details>
+    </section>
 	</main>
+  <footer>
+    <p>
+      Ежедневно с 11:00 до 19:00
+    </p>
+    <address>
+      Вологда, Торговая площадь, 1
+    </address>
+    <a href="callto:+79005347137">
+      +7 900 534-71-37
+    </a>
+    <ul>
+      <li>
+        <a href="">
+          Мастер-классы
+        </a>
+      </li>
+      <li>
+        <a href="">
+          Сертификаты
+        </a>
+      </li>
+      <li>
+        <a href="">
+          Каталог
+        </a>
+      </li>
+      <li>
+        <a href="">
+          На заказ
+        </a>
+      </li>
+      <li>
+        <a href="">
+          О нас
+        </a>
+      </li>
+      <li>
+        <a href="">
+          Контакты
+        </a>
+      </li>
+    </ul>
+    Мы в соцсетях
+    <ul>
+      <li>
+        <a href="">
+          Telegram
+        </a>
+      </li>
+      <li>
+        <a href="">
+          ВКонтакте
+        </a>
+      </li>
+    </ul>
+  </footer>
 </body>
 </html>

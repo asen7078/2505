@@ -2,30 +2,28 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 100%;
+  padding-block: 18px;
 
 	font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
 .main-menu__list {
-	margin: 0;
-	padding: 0;
 	display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 	gap: 16px;
-
-	list-style: none;
+  width: 100%;
+  max-width: 673px;
 }
 
 .main-menu__link {
 	padding: 4px 8px;
-
-	text-decoration: none;
 	color: var(--text-main);
 }
 
 .main-menu__link--folder {
 	padding-right: 28px;
-	background-image: url(./chevron-down.svg);
+	background-image: url(../img/chevron-down.svg);
 	background-repeat: no-repeat;
-	background-position: right;
+	background-position: center right;
 }
