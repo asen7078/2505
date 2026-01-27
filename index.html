@@ -97,29 +97,29 @@
         </li>
       </ul>
     </section>
-    <section>
-      <h2>Популярные изделия</h2>
-      <a href="">Перейти в каталог</a>
-      <ul>
+    <section class="popular-products">
+      <h2 class="popular-products__heading">Популярные изделия</h2>
+      <a class="popular-products__link" href="">Перейти в каталог</a>
+      <ul class="popular-products__list list-reset">
         <li>
           <img src="" alt="Светлая тарелка покрытая глазурью и редкими миниатюрными рисунками алых цветов" width="396" height="393">
           <h3>Тарелка Алый Цветочек</h3>
-          <button>В корзину</button>
+          <button class="popular-products__button btn btn--secondary">Купить</button>
         </li>
         <li>
           <img src="" alt="Светлая чашка покрытая глазурью и редкими миниатюрными рисунками алых цветов" width="188" height="197">
           <h3>Чашка Алый Цветочек</h3>
-          <button>В корзину</button>
+          <button class="popular-products__button btn btn--secondary">Купить</button>
         </li>
         <li>
           <img src="" alt="Светлая чашка покрытая глазурью и редкими миниатюрными рисунками васильковых цветов" width="292" height="304">
           <h3>Чашка из серии «Ipanema»</h3>
-          <button>В корзину</button>
+          <button class="popular-products__button btn btn--secondary">Купить</button>
         </li>
         <li>
           <img src="" alt="" width="292" height="395">
           <h3>Тарелки с лошадками</h3>
-          <button>В корзину</button>
+          <button class="popular-products__button btn btn--secondary">Купить</button>
         </li>
       </ul>
     </section>
@@ -185,61 +185,41 @@
       </details>
     </section>
 	</main>
-  <footer>
-    <p>
-      Ежедневно с 11:00 до 19:00
-    </p>
-    <address>
-      Вологда, Торговая площадь, 1
-    </address>
-    <a href="callto:+79005347137">
-      +7 900 534-71-37
-    </a>
-    <ul>
-      <li>
-        <a href="">
-          Мастер-классы
-        </a>
-      </li>
-      <li>
-        <a href="">
-          Сертификаты
-        </a>
-      </li>
-      <li>
-        <a href="">
-          Каталог
-        </a>
-      </li>
-      <li>
-        <a href="">
-          На заказ
-        </a>
-      </li>
-      <li>
-        <a href="">
-          О нас
-        </a>
-      </li>
-      <li>
-        <a href="">
-          Контакты
-        </a>
-      </li>
-    </ul>
-    Мы в соцсетях
-    <ul>
-      <li>
-        <a href="">
-          Telegram
-        </a>
-      </li>
-      <li>
-        <a href="">
-          ВКонтакте
-        </a>
-      </li>
-    </ul>
+  <footer class="footer">
+    <div class="footer-wrapper container">
+
+      <div class="footer-address">
+        <p>Ежедневно с 11:00 до 19:00</p>
+        <address class="contacts-text">
+          Вологда, Торговая площадь, 1
+          <a href="tel:+79005347137">+7 900 534-71-37</a>
+        </address>
+        <img class="contacts-image contacts-image-bg" src="img/footer-bg.png" width="493" height="264" alt="Фоновая картинка">
+
+      </div>
+
+      <ul class="menu-secondary clear-ul">
+        <li><a class="menu-secondary-item" href="#">О мастер-классах</a></li>
+        <li><a class="menu-secondary-item" href="#">Сертификаты</a></li>
+        <li><a class="menu-secondary-item menu-secondary-item-active" href="catalog.html">Каталог</a></li>
+        <li><a class="menu-secondary-item" href="#">На заказ</a></li>
+        <li><a class="menu-secondary-item" href="#">О нас</a></li>
+        <li><a class="menu-secondary-item" href="#">Контакты</a></li>
+      </ul>
+
+      <div class="footer-right">
+        <h3 class="text-widget text-widget-copyright">
+          Мы в соцсетях
+        </h3>
+        <ul class="menu-social clear-ul">
+          <li><a class="menu-social-link menu-social-link-tg" href="#" aria-label="Telegram">Telegram</a></li>
+          <li><a class="menu-social-link menu-social-link-vk" href="#" aria-label="ВКонтакте">ВКонтакте</a></li>
+        </ul>
+        <img class="contacts-image contacts-image-logo" src="img/footer-logo.svg" width="369" height="153" alt="Логотип">
+
+      </div>
+
+    </div>
   </footer>
 </body>
 </html>
