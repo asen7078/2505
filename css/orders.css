@@ -1,0 +1,45 @@
+.orders__title {
+  margin-right: 228px;
+  font-family: "Prosto One", sans-serif;
+  font-weight: 400;
+  font-size: clamp(40px, 6vw, 78px);
+  line-height: 140%;
+  color: #41572A;
+  width: 500px;
+}
+.personal__heading{
+font-family: "Prosto One", sans-serif;
+  font-weight: 400;
+  font-size: clamp(40px, 6vw, 42px);
+  line-height: 140%;
+  color: var(--secondary);
+  
+}
+
+.orders__paragraph {
+  font-family: 'Railway', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-secondary);
+  width: 396px;
+}
+.order__description{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.order__personal{
+    display: flex;
+    flex-direction: row;
+}
+.order__commercial{
+    display: flex;
+    flex-direction: row;
+}
+.order__partners{
+    display: flex;
+    flex-direction: row; 
+}
+.order__logo{
+    width: 604px;
+}

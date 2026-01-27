@@ -14,12 +14,16 @@
 	gap: 16px;
   width: 100%;
   max-width: 673px;
+  
 }
 
 .main-menu__link {
 	padding: 4px 8px;
 	color: var(--text-main);
+	
 }
+.main-menu__link span {
+  font-variant-numeric: lining-nums;}
 
 .main-menu__link--folder {
 	padding-right: 28px;

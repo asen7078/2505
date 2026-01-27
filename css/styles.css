@@ -5,6 +5,7 @@
 @import url(breadcrumbs.css);
 @import url(catalog.css);
 @import url(footer.css);
+@import url(orders.css);
 
 :root {
 	--bg-dark: #1D3305;
@@ -27,6 +28,7 @@ body {
 
 	background-color: var(--bg-base);
 }
+
 
 h1,
 h2,
