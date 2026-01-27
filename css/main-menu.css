@@ -4,7 +4,7 @@
 	align-items: center;
   padding-block: 18px;
 
-	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	font-family: var(--font-main);
 }
 
 .main-menu__list {

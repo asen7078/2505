@@ -16,6 +16,9 @@
 	--text-main: #1E1E1E;
 	--text-secondary: #504F4F;
 	--text-invert: #FFFFFF;
+
+	--font-main: 'Raleway', Arial, Helvetica, sans-serif;
+	--font-heading: 'Prosto One', Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -23,7 +26,7 @@ body {
 	padding: 0;
 	min-height: 100vh;
 
-	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	font-family: var(--font-main);
 	color: var(--text-main);
 
 	background-color: var(--bg-base);
@@ -72,7 +75,7 @@ ol, ul {
 	align-items: center;
 	padding: 4px 8px;
 
-	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	font-family: var(--font-main);
 	text-align: center;
 	color: var(--text-invert);
 	background-color: var(--primary);

@@ -31,7 +31,7 @@
   margin: 0;
   margin-bottom: 15px;
 
-	font-family: 'Prosto One', Arial, Helvetica, sans-serif;
+	font-family: var(--font-heading);
 	font-weight: 400;
 	font-size: 78px;
 	line-height: 95px;
