@@ -15,19 +15,25 @@
 
 <body>
   <nav class="main-menu container">
-    <a href="index.html">
-      <img src="logo.png" width="48" height="48" alt="Логотип">
-    </a>
-    <ul class="main-menu__list">
-      <li><a class="main-menu__link main-menu__link--folder" href="">Мастер-классы</a></li>
-      <li><a class="main-menu__link" href="">Сертификаты</a></li>
-      <li><a class="main-menu__link" href="#">Каталог</a></li>
-      <li><a class="main-menu__link" href="orders.html">На заказ</a></li>
-      <li><a class="main-menu__link" href="">О нас</a></li>
-      <li><a class="main-menu__link" href="">Контакты</a></li>
-    </ul>
-    <a class="main-menu__link" href="">Корзина (<span>0</span>)</a>
-  </nav>
+		<button class="main-menu__burger" type="button" aria-label="Открыть меню">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<a class="main-menu__logo" href="index.html">
+			<img src="logo.png" width="48" height="48" alt="Логотип">
+		</a>
+		<a class="main-menu__cart" href="cart.html">Корзина (<span id="cartCount">0</span>)</a>
+		<div class="main-menu__overlay"></div>
+		<ul class="main-menu__list">
+			<li><a class="main-menu__link main-menu__link--folder" href="">Мастер-классы</a></li>
+			<li><a class="main-menu__link" href="">Сертификаты</a></li>
+			<li><a class="main-menu__link" href="catalog.html">Каталог</a></li>
+			<li><a class="main-menu__link" href="">На заказ</a></li>
+			<li><a class="main-menu__link" href="">О нас</a></li>
+			<li><a class="main-menu__link" href="">Контакты</a></li>
+		</ul>
+	</nav>
 
   <main class="catalog container">
     <ul class="catalog__breadcrumbs breadcrumbs">
@@ -44,14 +50,23 @@
     </ul>
 
     <h1 class="catalog__title">Каталог
-      <span class="catalog__title--number">(36)</span>
+      <span class="catalog__title--number" id="productsCount">(0)</span>
     </h1>
 
     <section class="catalog__wrapper">
+      <button type="button" class="catalog__filter-btn" id="filterBtn">
+        <img src="img/filter-icon.svg" alt="Фильтры" width="22" height="22">
+        <span>Фильтры</span>
+      </button>
 
-      <form method="GET" action="https://echo.htmlacademy.ru/" class="catalog__form">
-
-        <h2 class="filter-heading">Фильтр:</h2>
+      <div class="catalog__filter-overlay" id="filterOverlay"></div>
+      <div class="catalog__filter-popup" id="filterPopup">
+        <button type="button" class="catalog__filter-close" id="filterClose" aria-label="Закрыть">
+          <span></span>
+          <span></span>
+        </button>
+        <h2 class="catalog__filter-popup-heading">Фильтры</h2>
+        <form method="GET" action="https://echo.htmlacademy.ru/" class="catalog__form" id="filterForm">
         <div class="catalog__form-wrapper">
           <fieldset class="filter-fieldset filter-fieldset-products">
 
@@ -107,142 +122,72 @@
 
           </fieldset>
         </div>
+        <button type="button" class="catalog__filter-apply btn" id="filterApply">Применить</button>
+      </form>
+      </div>
+
+      <form method="GET" action="https://echo.htmlacademy.ru/" class="catalog__form catalog__form--desktop">
+        <h2 class="filter-heading">Фильтр:</h2>
+        <div class="catalog__form-wrapper">
+          <fieldset class="filter-fieldset filter-fieldset-products">
+
+            <legend class="filter-legend filter-legend-products">Тип изделия</legend>
+
+            <input class="filter-checkbox-input" name="product-1" type="checkbox" id="product-1-desktop" checked>
+            <label class="filter-checkbox-label" for="product-1-desktop">Тарелки</label>
+
+            <input class="filter-checkbox-input" name="product-2" type="checkbox" id="product-2-desktop">
+            <label class="filter-checkbox-label" for="product-2-desktop">Чашки и кружки</label>
+
+            <input class="filter-checkbox-input" name="product-3" type="checkbox" id="product-3-desktop" checked>
+            <label class="filter-checkbox-label" for="product-3-desktop">Вазы</label>
+
+            <input class="filter-checkbox-input" name="product-4" type="checkbox" id="product-4-desktop">
+            <label class="filter-checkbox-label" for="product-4-desktop">Салатники и боулы</label>
+
+            <input class="filter-checkbox-input" name="product-5" type="checkbox" id="product-5-desktop">
+            <label class="filter-checkbox-label" for="product-5-desktop">Маслёнки</label>
+
+            <input class="filter-checkbox-input" name="product-6" type="checkbox" id="product-6-desktop">
+            <label class="filter-checkbox-label" for="product-6-desktop">Пашотницы</label>
+
+            <input class="filter-checkbox-input" name="product-7" type="checkbox" id="product-7-desktop">
+            <label class="filter-checkbox-label" for="product-7-desktop">Соусники</label>
+
+            <input class="filter-checkbox-input" name="product-8" type="checkbox" id="product-8-desktop">
+            <label class="filter-checkbox-label" for="product-8-desktop">Кувшины</label>
+
+            <input class="filter-checkbox-input" name="product-9" type="checkbox" id="product-9-desktop">
+            <label class="filter-checkbox-label" for="product-9-desktop">Сервировочные доски</label>
+
+          </fieldset>
+
+          <fieldset class="filter-fieldset filter-fieldset-power">
+
+            <legend class="filter-legend filter-legend-power">Коллекция</legend>
+
+            <input class="filter-checkbox-input" name="manufacturer-1" type="checkbox" id="manufacturer-1-desktop" checked>
+            <label class="filter-checkbox-label" for="manufacturer-1-desktop">botanic</label>
+
+            <input class="filter-checkbox-input" name="manufacturer-2" type="checkbox" id="manufacturer-2-desktop">
+            <label class="filter-checkbox-label" for="manufacturer-2-desktop">ipanema</label>
+
+            <input class="filter-checkbox-input" name="manufacturer-3" type="checkbox" id="manufacturer-3-desktop" checked>
+            <label class="filter-checkbox-label" for="manufacturer-3-desktop">romantic</label>
+
+            <input class="filter-checkbox-input" name="manufacturer-4" type="checkbox" id="manufacturer-4-desktop">
+            <label class="filter-checkbox-label" for="manufacturer-4-desktop">flowers</label>
+
+            <input class="filter-checkbox-input" name="manufacturer-5" type="checkbox" id="manufacturer-5-desktop">
+            <label class="filter-checkbox-label" for="manufacturer-5-desktop">classic</label>
+
+          </fieldset>
+        </div>
       </form>
 
       <div class="catalog__item">
-
-        <ul class="products-catalog-list clear-ul">
-
-          <li class="products-item">
-            <div class="products-image-wrapper">
-              <img class="products-image" src="img/product-1.jpg" width="292" height="292" alt="Тарелка с лошадками">
-            </div>
-            <div class="products-price-wrapper">
-              <a class="products-price products-item-title" href="#">тарелка с лошадками</a>
-              <a class="products-price product-price-new" href="#">2 000 ₽</a>
-            </div>
-            <a href="#" class="products-button products-buy">В корзину</a>
-          </li>
-
-          <li class="products-item">
-            <div class="products-image-wrapper">
-              <img class="products-image" src="img/product-2.jpg" width="292" height="292" alt="Кружка с сердечком">
-            </div>
-            <div class="products-price-wrapper">
-              <a class="products-price products-item-title" href="#">Кружка</a>
-              <a class="products-price product-price-new" href="#">2 100 ₽</a>
-            </div>
-            <a href="#" class="products-button products-buy">В корзину</a>
-          </li>
-
-          <li class="products-item">
-            <div class="products-image-wrapper">
-              <img class="products-image" src="img/product-3.jpg" width="292" height="292" alt="Тарелка под пасту">
-            </div>
-            <div class="products-price-wrapper">
-              <a class="products-price products-item-title" href="#">Тарелка под пасту</a>
-              <a class="products-price product-price-new" href="#">2 500 ₽</a>
-            </div>
-            <a href="#" class="products-button products-buy">В корзину</a>
-          </li>
-
-          <li class="products-item">
-            <div class="products-image-wrapper">
-              <img class="products-image" src="img/product-4.jpg" width="292" height="292" alt="Масленка">
-            </div>
-            <div class="products-price-wrapper">
-              <a class="products-price products-item-title" href="#">Масленка</a>
-              <a class="products-price product-price-new" href="#">2 500 ₽</a>
-            </div>
-            <a href="#" class="products-button products-buy">В корзину</a>
-          </li>
-
-          <li class="products-item">
-            <div class="products-image-wrapper">
-              <img class="products-image" src="img/product-5.jpg" width="292" height="292" alt="Сервировочная тарелка">
-            </div>
-            <div class="products-price-wrapper">
-              <a class="products-price products-item-title" href="#">Сервировочная тарелка</a>
-              <a class="products-price product-price-new" href="#">2 100 ₽</a>
-            </div>
-            <a href="#" class="products-button products-buy">В корзину</a>
-          </li>
-
-          <li class="products-item">
-            <div class="products-image-wrapper">
-              <img class="products-image" src="img/product-6.jpg" width="292" height="292" alt="Пашотница">
-            </div>
-            <div class="products-price-wrapper">
-              <a class="products-price products-item-title" href="#">Пашотница</a>
-              <a class="products-price product-price-new" href="#">1 800 ₽</a>
-            </div>
-            <a href="#" class="products-button products-buy">В корзину</a>
-          </li>
-
-          <li class="products-item">
-            <div class="products-image-wrapper">
-              <img class="products-image" src="img/product-7.jpg" width="292" height="292" alt="Соусник">
-            </div>
-            <div class="products-price-wrapper">
-              <a class="products-price products-item-title" href="#">Соусник</a>
-              <a class="products-price product-price-new" href="#">от 600 ₽</a>
-            </div>
-            <a href="#" class="products-button products-buy">В корзину</a>
-          </li>
-
-          <li class="products-item">
-            <div class="products-image-wrapper">
-              <img class="products-image" src="img/product-8.jpg" width="292" height="292" alt="Ваза">
-            </div>
-            <div class="products-price-wrapper">
-              <a class="products-price products-item-title" href="#">Ваза</a>
-              <a class="products-price product-price-new" href="#">4 500 ₽</a>
-            </div>
-            <a href="#" class="products-button products-buy">В корзину</a>
-          </li>
-
-          <li class="products-item">
-            <div class="products-image-wrapper">
-              <img class="products-image" src="img/product-9.jpg" width="292" height="292" alt="Молочник/кувшин">
-            </div>
-            <div class="products-price-wrapper">
-              <a class="products-price products-item-title" href="#">Молочник/кувшин</a>
-              <a class="products-price product-price-new" href="#">2 300 ₽</a>
-            </div>
-            <a href="#" class="products-button products-buy">В корзину</a>
-          </li>
-        </ul>
-
-        <ul class="pagination clear-ul">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-link-end">
-              <svg  class="products-image" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.75 0.75L6.75 6.75L12.75 0.75" stroke="#504F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <!-- <img class="products-image" src="img/icon-chevron-down.svg" width="14" height="8" alt="Стрелка назад"> -->
-            </a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-link-current" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-link-next">
-              <svg  class="products-image" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.75 0.75L6.75 6.75L12.75 0.75" stroke="#504F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <!-- <img class="products-image" src="img/icon-chevron-down.svg" width="14" height="8" alt="Стрелка назад"> -->
-            </a>
-          </li>
-        </ul>
+        <ul class="products-catalog-list clear-ul" id="productsList"></ul>
+        <ul class="pagination clear-ul" id="pagination"></ul>
       </div>
     </section>
   </main>
@@ -256,7 +201,6 @@
           Вологда, Торговая площадь, 1
           <a href="tel:+79005347137">+7 900 534-71-37</a>
         </address>
-        <img class="contacts-image contacts-image-bg" src="img/footer-bg.png" width="493" height="264" alt="Фоновая картинка">
 
       </div>
 
@@ -283,6 +227,331 @@
 
     </div>
   </footer>
+	<script>
+		const menu = document.querySelector('.main-menu');
+		const burger = document.querySelector('.main-menu__burger');
+		const overlay = document.querySelector('.main-menu__overlay');
+
+		function toggleMenu() {
+			menu.classList.toggle('main-menu--open');
+		}
+
+		function closeMenu() {
+			menu.classList.remove('main-menu--open');
+		}
+
+		if (burger) {
+			burger.addEventListener('click', toggleMenu);
+		}
+
+		if (overlay) {
+			overlay.addEventListener('click', closeMenu);
+		}
+
+		const menuLinks = document.querySelectorAll('.main-menu__link');
+		menuLinks.forEach(link => {
+			link.addEventListener('click', () => {
+				if (window.innerWidth < 768) {
+					closeMenu();
+				}
+			});
+		});
+	</script>
+	<script>
+		// Данные корзины (из localStorage или по умолчанию)
+		let cartData = JSON.parse(localStorage.getItem('cartData')) || { items: [] };
+
+		// Загрузка данных товаров
+		let allProducts = [];
+		let filteredProducts = [];
+		let currentPage = 1;
+		const productsPerPage = 9;
+
+		// Загрузка JSON
+		fetch('data/products.json')
+			.then(response => response.json())
+			.then(data => {
+				allProducts = data;
+				filteredProducts = [...allProducts];
+				updateCartCount();
+				applyFilters();
+			})
+			.catch(error => {
+				console.error('Ошибка загрузки данных:', error);
+			});
+
+		// Функция обновления счетчика корзины
+		function updateCartCount() {
+			const totalQuantity = cartData.items.reduce((sum, item) => sum + item.quantity, 0);
+			const cartCount = document.getElementById('cartCount');
+			if (cartCount) {
+				cartCount.textContent = totalQuantity;
+			}
+		}
+
+		// Инициализация счетчика при загрузке
+		updateCartCount();
+
+		// Функция добавления в корзину
+		function addToCart(productId) {
+			const product = allProducts.find(p => p.id === productId);
+			if (!product) return;
+
+			const existingItem = cartData.items.find(item => item.id === productId);
+			if (existingItem) {
+				existingItem.quantity++;
+			} else {
+				cartData.items.push({
+					id: product.id,
+					title: product.title,
+					image: product.image,
+					price: product.price,
+					quantity: 1,
+					params: {
+						diameter: '21 см',
+						color: 'белый'
+					}
+				});
+			}
+
+			localStorage.setItem('cartData', JSON.stringify(cartData));
+			updateCartCount();
+		}
+
+		// Функция фильтрации
+		function applyFilters() {
+			// Используем десктопную форму или попап в зависимости от того, какая видна
+			const activeForm = document.querySelector('.catalog__form--desktop:not([style*="display: none"])') || 
+			                  document.getElementById('filterForm');
+			
+			if (!activeForm) return;
+
+			const typeCheckboxes = activeForm.querySelectorAll('.filter-fieldset-products input[type="checkbox"]');
+			const collectionCheckboxes = activeForm.querySelectorAll('.filter-fieldset-power input[type="checkbox"]');
+
+			const selectedTypes = Array.from(typeCheckboxes)
+				.filter(cb => cb.checked)
+				.map(cb => {
+					const label = activeForm.querySelector(`label[for="${cb.id}"]`);
+					return label ? label.textContent.trim() : '';
+				});
+
+			const selectedCollections = Array.from(collectionCheckboxes)
+				.filter(cb => cb.checked)
+				.map(cb => {
+					const label = activeForm.querySelector(`label[for="${cb.id}"]`);
+					const text = label ? label.textContent.trim() : '';
+					return text.toLowerCase();
+				});
+
+			filteredProducts = allProducts.filter(product => {
+				const typeMatch = selectedTypes.length === 0 || selectedTypes.includes(product.type);
+				const collectionMatch = selectedCollections.length === 0 || selectedCollections.includes(product.collection);
+				return typeMatch && collectionMatch;
+			});
+
+			currentPage = 1;
+			renderProducts();
+			renderPagination();
+			updateProductsCount();
+		}
+
+		// Функция рендеринга товаров
+		function renderProducts() {
+			const productsList = document.getElementById('productsList');
+			if (!productsList) return;
+
+			const startIndex = (currentPage - 1) * productsPerPage;
+			const endIndex = startIndex + productsPerPage;
+			const pageProducts = filteredProducts.slice(startIndex, endIndex);
+
+			productsList.innerHTML = '';
+
+			pageProducts.forEach(product => {
+				const li = document.createElement('li');
+				li.className = 'products-item';
+				li.innerHTML = `
+					<div class="products-image-wrapper">
+						<img class="products-image" src="${product.image}" width="292" height="292" alt="${product.title}">
+					</div>
+					<div class="products-price-wrapper">
+						<a class="products-price products-item-title" href="product.html">${product.title}</a>
+						<a class="products-price product-price-new" href="#">${product.price.toLocaleString('ru-RU')} ₽</a>
+					</div>
+					<button type="button" class="products-button products-buy" data-id="${product.id}">В корзину</button>
+				`;
+				productsList.appendChild(li);
+			});
+
+			// Обработчики для кнопок "В корзину"
+			productsList.querySelectorAll('.products-buy').forEach(button => {
+				button.addEventListener('click', function() {
+					const productId = parseInt(this.getAttribute('data-id'));
+					addToCart(productId);
+				});
+			});
+		}
+
+		// Функция рендеринга пагинации
+		function renderPagination() {
+			const pagination = document.getElementById('pagination');
+			if (!pagination) return;
+
+			const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
+			if (totalPages <= 1) {
+				pagination.innerHTML = '';
+				return;
+			}
+
+			pagination.innerHTML = '';
+
+			// Кнопка "Назад"
+			const prevLi = document.createElement('li');
+			prevLi.className = 'pagination-item';
+			const prevLink = document.createElement('a');
+			prevLink.className = 'pagination-link pagination-link-end';
+			prevLink.innerHTML = `
+				<svg class="products-image" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M0.75 0.75L6.75 6.75L12.75 0.75" stroke="#504F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			`;
+			if (currentPage > 1) {
+				prevLink.addEventListener('click', (e) => {
+					e.preventDefault();
+					currentPage--;
+					renderProducts();
+					renderPagination();
+				});
+			} else {
+				prevLink.style.pointerEvents = 'none';
+				prevLink.style.opacity = '0.5';
+			}
+			prevLi.appendChild(prevLink);
+			pagination.appendChild(prevLi);
+
+			// Номера страниц
+			for (let i = 1; i <= totalPages; i++) {
+				const li = document.createElement('li');
+				li.className = 'pagination-item';
+				const link = document.createElement('a');
+				link.className = 'pagination-link';
+				if (i === currentPage) {
+					link.className += ' pagination-link-current';
+				}
+				link.textContent = i;
+				link.href = '#';
+				link.addEventListener('click', (e) => {
+					e.preventDefault();
+					currentPage = i;
+					renderProducts();
+					renderPagination();
+				});
+				li.appendChild(link);
+				pagination.appendChild(li);
+			}
+
+			// Кнопка "Вперед"
+			const nextLi = document.createElement('li');
+			nextLi.className = 'pagination-item';
+			const nextLink = document.createElement('a');
+			nextLink.className = 'pagination-link pagination-link-next';
+			nextLink.innerHTML = `
+				<svg class="products-image" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M0.75 0.75L6.75 6.75L12.75 0.75" stroke="#504F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			`;
+			if (currentPage < totalPages) {
+				nextLink.addEventListener('click', (e) => {
+					e.preventDefault();
+					currentPage++;
+					renderProducts();
+					renderPagination();
+				});
+			} else {
+				nextLink.style.pointerEvents = 'none';
+				nextLink.style.opacity = '0.5';
+			}
+			nextLi.appendChild(nextLink);
+			pagination.appendChild(nextLi);
+		}
+
+		// Функция обновления счетчика товаров
+		function updateProductsCount() {
+			const countElement = document.getElementById('productsCount');
+			if (countElement) {
+				countElement.textContent = `(${filteredProducts.length})`;
+			}
+		}
+
+		// Обработчики фильтров (только для десктопной формы)
+		document.querySelectorAll('.catalog__form--desktop .filter-checkbox-input').forEach(checkbox => {
+			checkbox.addEventListener('change', applyFilters);
+		});
+
+		// Синхронизация чекбоксов между попапом и десктопной формой
+		function syncCheckboxes() {
+			document.querySelectorAll('#filterForm .filter-checkbox-input').forEach(checkbox => {
+				const name = checkbox.name;
+				const desktopCheckbox = document.querySelector(`.catalog__form--desktop input[name="${name}"]`);
+				if (desktopCheckbox) {
+					desktopCheckbox.checked = checkbox.checked;
+				}
+			});
+		}
+
+		// Синхронизация при открытии попапа
+		function syncToPopup() {
+			document.querySelectorAll('.catalog__form--desktop .filter-checkbox-input').forEach(checkbox => {
+				const name = checkbox.name;
+				const popupCheckbox = document.querySelector(`#filterForm input[name="${name}"]`);
+				if (popupCheckbox) {
+					popupCheckbox.checked = checkbox.checked;
+				}
+			});
+		}
+
+		// Обработчики попапа фильтров
+		const filterBtn = document.getElementById('filterBtn');
+		const filterPopup = document.getElementById('filterPopup');
+		const filterOverlay = document.getElementById('filterOverlay');
+		const filterClose = document.getElementById('filterClose');
+		const filterApply = document.getElementById('filterApply');
+
+		function openFilterPopup() {
+			filterPopup.classList.add('active');
+			filterOverlay.classList.add('active');
+			document.body.style.overflow = 'hidden';
+		}
+
+		function closeFilterPopup() {
+			filterPopup.classList.remove('active');
+			filterOverlay.classList.remove('active');
+			document.body.style.overflow = '';
+		}
+
+		if (filterBtn) {
+			filterBtn.addEventListener('click', () => {
+				syncToPopup();
+				openFilterPopup();
+			});
+		}
+
+		if (filterClose) {
+			filterClose.addEventListener('click', closeFilterPopup);
+		}
+
+		if (filterOverlay) {
+			filterOverlay.addEventListener('click', closeFilterPopup);
+		}
+
+		if (filterApply) {
+			filterApply.addEventListener('click', () => {
+				syncCheckboxes();
+				applyFilters();
+				closeFilterPopup();
+			});
+		}
+	</script>
 </body>
 
 </html>

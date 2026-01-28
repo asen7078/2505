@@ -1,0 +1,290 @@
+[
+  {
+    "id": 1,
+    "title": "тарелка с лошадками",
+    "image": "img/product-1.jpg",
+    "price": 2000,
+    "type": "Тарелки",
+    "collection": "classic"
+  },
+  {
+    "id": 2,
+    "title": "Кружка",
+    "image": "img/product-2.jpg",
+    "price": 2100,
+    "type": "Чашки и кружки",
+    "collection": "romantic"
+  },
+  {
+    "id": 3,
+    "title": "Тарелка под пасту",
+    "image": "img/product-3.jpg",
+    "price": 2500,
+    "type": "Тарелки",
+    "collection": "botanic"
+  },
+  {
+    "id": 4,
+    "title": "Масленка",
+    "image": "img/product-4.jpg",
+    "price": 2500,
+    "type": "Маслёнки",
+    "collection": "classic"
+  },
+  {
+    "id": 5,
+    "title": "Сервировочная тарелка",
+    "image": "img/product-5.jpg",
+    "price": 2100,
+    "type": "Тарелки",
+    "collection": "botanic"
+  },
+  {
+    "id": 6,
+    "title": "Пашотница",
+    "image": "img/product-6.jpg",
+    "price": 1800,
+    "type": "Пашотницы",
+    "collection": "romantic"
+  },
+  {
+    "id": 7,
+    "title": "Соусник",
+    "image": "img/product-7.jpg",
+    "price": 600,
+    "type": "Соусники",
+    "collection": "ipanema"
+  },
+  {
+    "id": 8,
+    "title": "Ваза",
+    "image": "img/product-8.jpg",
+    "price": 4500,
+    "type": "Вазы",
+    "collection": "botanic"
+  },
+  {
+    "id": 9,
+    "title": "Молочник/кувшин",
+    "image": "img/product-9.jpg",
+    "price": 2300,
+    "type": "Кувшины",
+    "collection": "classic"
+  },
+  {
+    "id": 10,
+    "title": "Тарелка Алый Цветочек",
+    "image": "img/popular-product-scarlet-flower-plate.jpg",
+    "price": 2500,
+    "type": "Тарелки",
+    "collection": "flowers"
+  },
+  {
+    "id": 11,
+    "title": "Чашка Алый Цветочек",
+    "image": "img/popular-product-scarlet-flower-cup.jpg",
+    "price": 2100,
+    "type": "Чашки и кружки",
+    "collection": "flowers"
+  },
+  {
+    "id": 12,
+    "title": "Чашка с синим цветком",
+    "image": "img/popular-product-blue-flower-cup.jpg",
+    "price": 2100,
+    "type": "Чашки и кружки",
+    "collection": "ipanema"
+  },
+  {
+    "id": 13,
+    "title": "Тарелка десертная",
+    "image": "img/product-1.jpg",
+    "price": 1800,
+    "type": "Тарелки",
+    "collection": "romantic"
+  },
+  {
+    "id": 14,
+    "title": "Кружка большая",
+    "image": "img/product-2.jpg",
+    "price": 2200,
+    "type": "Чашки и кружки",
+    "collection": "classic"
+  },
+  {
+    "id": 15,
+    "title": "Ваза высокая",
+    "image": "img/product-8.jpg",
+    "price": 5000,
+    "type": "Вазы",
+    "collection": "botanic"
+  },
+  {
+    "id": 16,
+    "title": "Боул для салата",
+    "image": "img/product-5.jpg",
+    "price": 2800,
+    "type": "Салатники и боулы",
+    "collection": "romantic"
+  },
+  {
+    "id": 17,
+    "title": "Тарелка глубокая",
+    "image": "img/product-3.jpg",
+    "price": 2400,
+    "type": "Тарелки",
+    "collection": "botanic"
+  },
+  {
+    "id": 18,
+    "title": "Кружка малая",
+    "image": "img/product-2.jpg",
+    "price": 1900,
+    "type": "Чашки и кружки",
+    "collection": "ipanema"
+  },
+  {
+    "id": 19,
+    "title": "Ваза круглая",
+    "image": "img/product-8.jpg",
+    "price": 4200,
+    "type": "Вазы",
+    "collection": "flowers"
+  },
+  {
+    "id": 20,
+    "title": "Сервировочная доска",
+    "image": "img/product-5.jpg",
+    "price": 3200,
+    "type": "Сервировочные доски",
+    "collection": "classic"
+  },
+  {
+    "id": 21,
+    "title": "Тарелка плоская",
+    "image": "img/product-1.jpg",
+    "price": 2000,
+    "type": "Тарелки",
+    "collection": "romantic"
+  },
+  {
+    "id": 22,
+    "title": "Кружка эспрессо",
+    "image": "img/product-2.jpg",
+    "price": 1500,
+    "type": "Чашки и кружки",
+    "collection": "classic"
+  },
+  {
+    "id": 23,
+    "title": "Ваза квадратная",
+    "image": "img/product-8.jpg",
+    "price": 4800,
+    "type": "Вазы",
+    "collection": "botanic"
+  },
+  {
+    "id": 24,
+    "title": "Масленка малая",
+    "image": "img/product-4.jpg",
+    "price": 2200,
+    "type": "Маслёнки",
+    "collection": "romantic"
+  },
+  {
+    "id": 25,
+    "title": "Пашотница двойная",
+    "image": "img/product-6.jpg",
+    "price": 2000,
+    "type": "Пашотницы",
+    "collection": "ipanema"
+  },
+  {
+    "id": 26,
+    "title": "Соусник большой",
+    "image": "img/product-7.jpg",
+    "price": 800,
+    "type": "Соусники",
+    "collection": "classic"
+  },
+  {
+    "id": 27,
+    "title": "Кувшин для молока",
+    "image": "img/product-9.jpg",
+    "price": 2400,
+    "type": "Кувшины",
+    "collection": "botanic"
+  },
+  {
+    "id": 28,
+    "title": "Тарелка обеденная",
+    "image": "img/product-1.jpg",
+    "price": 2200,
+    "type": "Тарелки",
+    "collection": "flowers"
+  },
+  {
+    "id": 29,
+    "title": "Боул глубокий",
+    "image": "img/product-5.jpg",
+    "price": 2600,
+    "type": "Салатники и боулы",
+    "collection": "romantic"
+  },
+  {
+    "id": 30,
+    "title": "Ваза мини",
+    "image": "img/product-8.jpg",
+    "price": 3500,
+    "type": "Вазы",
+    "collection": "ipanema"
+  },
+  {
+    "id": 31,
+    "title": "Кружка с ручкой",
+    "image": "img/product-2.jpg",
+    "price": 2000,
+    "type": "Чашки и кружки",
+    "collection": "classic"
+  },
+  {
+    "id": 32,
+    "title": "Тарелка закусочная",
+    "image": "img/product-1.jpg",
+    "price": 1800,
+    "type": "Тарелки",
+    "collection": "botanic"
+  },
+  {
+    "id": 33,
+    "title": "Масленка круглая",
+    "image": "img/product-4.jpg",
+    "price": 2300,
+    "type": "Маслёнки",
+    "collection": "romantic"
+  },
+  {
+    "id": 34,
+    "title": "Ваза цилиндрическая",
+    "image": "img/product-8.jpg",
+    "price": 4600,
+    "type": "Вазы",
+    "collection": "flowers"
+  },
+  {
+    "id": 35,
+    "title": "Кувшин для воды",
+    "image": "img/product-9.jpg",
+    "price": 2500,
+    "type": "Кувшины",
+    "collection": "classic"
+  },
+  {
+    "id": 36,
+    "title": "Сервировочная доска малая",
+    "image": "img/product-5.jpg",
+    "price": 2800,
+    "type": "Сервировочные доски",
+    "collection": "ipanema"
+  }
+]

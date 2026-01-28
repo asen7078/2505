@@ -1,0 +1,120 @@
+.popular-products {
+	position: relative;
+	margin: 0 auto;
+	margin-top: 110px;
+	max-width: 1228px;
+}
+
+.popular-products__heading {
+	margin: 0;
+	margin-bottom: 16px;
+
+	font-family: var(--font-heading);
+	font-weight: 400;
+	font-size: 42px;
+	line-height: 52px;
+	color: var(--primary);
+}
+
+.popular-products__link {
+	display: inline-block;
+	margin-bottom: 24px;
+	padding-right: 20px;
+
+	text-decoration: none;
+	color: var(--secondary);
+	background-image: url('../img/link-icon.svg');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+.popular-products__list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 16px 10px;
+	min-width: 0;
+}
+
+@media (max-width: 360px) {
+	.popular-products__list {
+		gap: 16px 8px;
+	}
+}
+
+.popular-products__item {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-template-rows: auto auto auto;
+	row-gap: 24px;
+	min-width: 0;
+	overflow: hidden;
+}
+
+.popular-products__figure {
+	grid-column: 1 / -1;
+	grid-row: 1;
+	margin: 0;
+}
+
+.popular-products__picture {
+	display: flex;
+}
+
+.popular-products__image {
+	display: flex;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 1;
+	object-fit: cover;
+	max-width: 100%;
+}
+
+.popular-products__figcaption {
+	grid-column: 1;
+	grid-row: 2;
+	font-family: var(--font-main);
+	font-size: 14px;
+	font-weight: 400;
+
+	text-transform: lowercase;
+}
+
+.popular-products__price {
+	grid-column: 2;
+	grid-row: 2;
+	justify-self: end;
+	white-space: nowrap;
+	font-family: var(--font-heading);
+	font-size: 14px;
+}
+
+.popular-products__button {
+	grid-column: 1 / -1;
+	grid-row: 3;
+	min-width: 188px;
+	justify-self: start;
+}
+
+@media (min-width: 768px) {
+	.popular-products__heading {
+		margin-bottom: 15px;
+	}
+
+	.popular-products__link {
+		position: absolute;
+		top: 10px;
+		right: 0;
+		margin-bottom: 0;
+		padding-right: 20px;
+	}
+
+	.popular-products__list {
+		display: flex;
+		align-items: start;
+		gap: 20px;
+	}
+
+	.popular-products__image {
+		aspect-ratio: auto;
+	}
+}

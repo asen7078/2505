@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Гончарная студия 2505 ceramics — Корзина</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Prosto+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<nav class="main-menu container">
+		<button class="main-menu__burger" type="button" aria-label="Открыть меню">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<a class="main-menu__logo" href="index.html">
+			<img src="logo.png" width="48" height="48" alt="Логотип">
+		</a>
+		<a class="main-menu__cart" href="cart.html">Корзина (<span id="cartCount">0</span>)</a>
+		<div class="main-menu__overlay"></div>
+		<ul class="main-menu__list">
+			<li><a class="main-menu__link main-menu__link--folder" href="">Мастер-классы</a></li>
+			<li><a class="main-menu__link" href="">Сертификаты</a></li>
+			<li><a class="main-menu__link" href="catalog.html">Каталог</a></li>
+			<li><a class="main-menu__link" href="">На заказ</a></li>
+			<li><a class="main-menu__link" href="">О нас</a></li>
+			<li><a class="main-menu__link" href="">Контакты</a></li>
+		</ul>
+	</nav>
+	<main class="cart container">
+		<section class="cart__empty" id="cartEmpty">
+			<div class="cart__content">
+				<h1 class="cart__heading">Корзина пуста</h1>
+				<a class="cart__link btn" href="catalog.html">В каталог</a>
+			</div>
+			<div class="cart__image"></div>
+		</section>
+
+		<section class="cart__full" id="cartFull" style="display: none;">
+			<h1 class="cart__title">Ваш заказ</h1>
+			<div class="cart__wrapper">
+				<div class="cart__items">
+					<div id="cartItemsList"></div>
+					<div class="cart__total">
+						<span class="cart__total-label">Сумма:</span>
+						<span class="cart__total-price" id="cartTotal">0 ₽</span>
+					</div>
+				</div>
+				<form class="cart__form" id="cartForm">
+					<label class="cart__field">
+						<span class="cart__label">Имя<span class="cart__required">*</span></span>
+						<input type="text" name="name" class="cart__input" placeholder="Ваше имя" required>
+					</label>
+					<label class="cart__field">
+						<span class="cart__label">Почта</span>
+						<input type="email" name="email" class="cart__input" placeholder="email@address.com">
+					</label>
+					<label class="cart__field">
+						<span class="cart__label">Телефон<span class="cart__required">*</span></span>
+						<input type="tel" name="phone" class="cart__input" placeholder="+7 (___) ___-__-__" required>
+					</label>
+					<fieldset class="cart__fieldset">
+						<legend class="cart__legend">Способ получения</legend>
+						<label class="cart__radio">
+							<input type="radio" name="delivery" value="pickup" checked>
+							<span>самовывоз</span>
+						</label>
+						<label class="cart__radio">
+							<input type="radio" name="delivery" value="delivery">
+							<span>доставка</span>
+						</label>
+					</fieldset>
+					<label class="cart__field">
+						<span class="cart__label">Комментарий к заказу</span>
+						<textarea name="comment" class="cart__textarea" placeholder="Дополнительные пожелания"></textarea>
+					</label>
+					<label class="cart__checkbox">
+						<input type="checkbox" name="privacy" required>
+						<span>Я согласен с политикой конфиденциальности</span>
+					</label>
+					<button type="submit" class="cart__submit btn">Оформить заказ</button>
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer-wrapper container">
+
+			<div class="footer-address">
+				<p>Ежедневно с 11:00 до 19:00</p>
+				<address class="contacts-text">
+					Вологда, Торговая площадь, 1
+					<a href="tel:+79005347137">+7 900 534-71-37</a>
+				</address>
+
+			</div>
+
+			<ul class="menu-secondary clear-ul">
+				<li><a class="menu-secondary-item" href="#">О мастер-классах</a></li>
+				<li><a class="menu-secondary-item" href="#">Сертификаты</a></li>
+				<li><a class="menu-secondary-item menu-secondary-item-active" href="catalog.html">Каталог</a></li>
+				<li><a class="menu-secondary-item" href="#">На заказ</a></li>
+				<li><a class="menu-secondary-item" href="#">О нас</a></li>
+				<li><a class="menu-secondary-item" href="#">Контакты</a></li>
+			</ul>
+
+			<div class="footer-right">
+				<h3 class="text-widget text-widget-copyright">
+					Мы в соцсетях
+				</h3>
+				<ul class="menu-social clear-ul">
+					<li><a class="menu-social-link menu-social-link-tg" href="#" aria-label="Telegram">Telegram</a></li>
+					<li><a class="menu-social-link menu-social-link-vk" href="#" aria-label="ВКонтакте">ВКонтакте</a></li>
+				</ul>
+				<img class="contacts-image contacts-image-logo" src="img/footer-logo.svg" width="369" height="153" alt="Логотип">
+
+			</div>
+
+		</div>
+	</footer>
+	<script>
+		const menu = document.querySelector('.main-menu');
+		const burger = document.querySelector('.main-menu__burger');
+		const overlay = document.querySelector('.main-menu__overlay');
+
+		function toggleMenu() {
+			menu.classList.toggle('main-menu--open');
+		}
+
+		function closeMenu() {
+			menu.classList.remove('main-menu--open');
+		}
+
+		if (burger) {
+			burger.addEventListener('click', toggleMenu);
+		}
+
+		if (overlay) {
+			overlay.addEventListener('click', closeMenu);
+		}
+
+		const menuLinks = document.querySelectorAll('.main-menu__link');
+		menuLinks.forEach(link => {
+			link.addEventListener('click', () => {
+				if (window.innerWidth < 768) {
+					closeMenu();
+				}
+			});
+		});
+	</script>
+	<script>
+		// Данные корзины (без сохранения в localStorage)
+		// При загрузке страницы корзина содержит начальный набор товаров
+		let cartData = {
+			items: [
+				{
+					id: 1,
+					title: 'Тарелка с лошадками',
+					image: 'img/popular-product-plate-with-horses.jpg',
+					price: 2100,
+					quantity: 1,
+					params: {
+						diameter: '21 см',
+						color: 'белый'
+					}
+				},
+				{
+					id: 2,
+					title: 'Кружка',
+					image: 'img/product-2.jpg',
+					price: 2100,
+					quantity: 2,
+					params: {
+						diameter: '8 см',
+						color: 'бежевый'
+					}
+				},
+				{
+					id: 4,
+					title: 'Масленка',
+					image: 'img/product-4.jpg',
+					price: 2500,
+					quantity: 1,
+					params: {
+						diameter: '12 см',
+						color: 'кремовый'
+					}
+				},
+				{
+					id: 8,
+					title: 'Ваза',
+					image: 'img/product-8.jpg',
+					price: 4500,
+					quantity: 1,
+					params: {
+						diameter: '15 см',
+						color: 'белый'
+					}
+				}
+			]
+		};
+
+		// Функции для работы с корзиной
+		function updateCartDisplay() {
+			const cartEmpty = document.getElementById('cartEmpty');
+			const cartFull = document.getElementById('cartFull');
+			const cartItemsList = document.getElementById('cartItemsList');
+			const cartTotal = document.getElementById('cartTotal');
+
+			if (!cartData || !cartData.items || cartData.items.length === 0) {
+				if (cartEmpty) cartEmpty.style.display = 'grid';
+				if (cartFull) cartFull.style.display = 'none';
+				// Обновление счетчика в меню при пустой корзине
+				const cartCounter = document.querySelector('.main-menu__cart span');
+				if (cartCounter) {
+					cartCounter.textContent = '0';
+				}
+				return;
+			}
+
+			if (cartEmpty) cartEmpty.style.display = 'none';
+			if (cartFull) cartFull.style.display = 'block';
+
+			// Отрисовка товаров
+			if (!cartItemsList) return;
+			cartItemsList.innerHTML = '';
+			cartData.items.forEach((item, index) => {
+				const itemElement = document.createElement('div');
+				itemElement.className = 'cart__item';
+				itemElement.innerHTML = `
+					<img src="${item.image}" alt="${item.title}" class="cart__item-image" width="120" height="120">
+					<div class="cart__item-info">
+						<h3 class="cart__item-title">${item.title}</h3>
+						<p class="cart__item-params">Диаметр: ${item.params.diameter}</p>
+						<p class="cart__item-params">Цвет: ${item.params.color}</p>
+					</div>
+					<div class="cart__item-controls">
+						<button type="button" class="cart__quantity-btn" data-action="decrease" data-id="${item.id}">-</button>
+						<span class="cart__quantity">${item.quantity}</span>
+						<button type="button" class="cart__quantity-btn" data-action="increase" data-id="${item.id}">+</button>
+					</div>
+					<div class="cart__item-price">${item.price.toLocaleString('ru-RU')} ₽</div>
+					${index < cartData.items.length - 1 ? '<hr class="cart__divider">' : ''}
+				`;
+				cartItemsList.appendChild(itemElement);
+			});
+
+			// Пересчет суммы
+			const total = cartData.items.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+			if (cartTotal) {
+				cartTotal.textContent = total.toLocaleString('ru-RU') + ' ₽';
+			}
+
+			// Обновление счетчика в меню
+			const totalQuantity = cartData.items.reduce((sum, item) => sum + item.quantity, 0);
+			const cartCounter = document.querySelector('.main-menu__cart span');
+			if (cartCounter) {
+				cartCounter.textContent = totalQuantity;
+			}
+		}
+
+		function updateQuantity(itemId, action) {
+			const item = cartData.items.find(item => item.id === itemId);
+			if (!item) return;
+
+			if (action === 'increase') {
+				item.quantity++;
+			} else if (action === 'decrease') {
+				item.quantity--;
+				if (item.quantity <= 0) {
+					cartData.items = cartData.items.filter(i => i.id !== itemId);
+				}
+			}
+
+			updateCartDisplay();
+		}
+
+		// Обработчики событий
+		document.addEventListener('click', function(e) {
+			if (e.target.classList.contains('cart__quantity-btn')) {
+				const action = e.target.getAttribute('data-action');
+				const itemId = parseInt(e.target.getAttribute('data-id'));
+				updateQuantity(itemId, action);
+			}
+		});
+
+		// Обработка формы
+		document.getElementById('cartForm').addEventListener('submit', function(e) {
+			e.preventDefault();
+			// Здесь можно добавить отправку данных на сервер
+			console.log('Форма отправлена', new FormData(this));
+		});
+
+		// Инициализация после загрузки DOM
+		if (document.readyState === 'loading') {
+			document.addEventListener('DOMContentLoaded', updateCartDisplay);
+		} else {
+			updateCartDisplay();
+		}
+
+		// Обновление счетчика в меню при загрузке
+		if (cartData && cartData.items) {
+			const totalQuantity = cartData.items.reduce((sum, item) => sum + item.quantity, 0);
+			const cartCounter = document.querySelector('.main-menu__cart span');
+			if (cartCounter) {
+				cartCounter.textContent = totalQuantity;
+			}
+		}
+	</script>
+</body>
+</html>
