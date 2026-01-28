@@ -71,16 +71,14 @@ ol, ul {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 4px 8px;
+	padding: 10px 8px;
 
 	font-family: 'Raleway', Arial, Helvetica, sans-serif;
 	text-align: center;
 	color: var(--text-invert);
 	background-color: var(--primary);
 	text-decoration: none;
-
 	border-width: 1.5px;
-	border-color: var(--secondary);
 	border-style: solid;
 }
 

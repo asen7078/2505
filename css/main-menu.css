@@ -31,3 +31,6 @@
 	background-repeat: no-repeat;
 	background-position: center right;
 }
+.main-menu__link-active {
+  color: #41572A;
+}
