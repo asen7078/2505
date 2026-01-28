@@ -8,6 +8,8 @@
 @import url(faq.css);
 @import url(breadcrumbs.css);
 @import url(catalog.css);
+@import url(product.css);
+@import url(related-products.css);
 @import url(footer.css);
 
 :root {
