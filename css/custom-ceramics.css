@@ -1,0 +1,109 @@
+.custom-ceramics {
+	position: relative;
+	margin: 0 auto;
+	margin-top: 110px;
+	max-width: 1228px;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 20px;
+}
+
+.custom-ceramics__heading {
+	margin: 0;
+	margin-bottom: 16px;
+
+	font-family: var(--font-heading);
+	font-weight: 400;
+	font-size: 42px;
+	line-height: 52px;
+	color: var(--primary);
+}
+
+.custom-ceramics__image-small {
+	display: none;
+}
+
+.custom-ceramics__image-bg {
+	display: none;
+}
+
+.custom-ceramics__article {
+	margin: 0;
+}
+
+.custom-ceramics__article-heading {
+	margin: 0;
+	margin-bottom: 12px;
+
+	font-family: var(--font-heading);
+	font-weight: 400;
+	font-size: 20px;
+	color: var(--text-main);
+}
+
+.custom-ceramics__article-paragraph {
+	margin: 0;
+	margin-bottom: 12px;
+
+	font-family: var(--font-main);
+	font-weight: 400;
+	font-size: 14px;
+	color: var(--text-main);
+}
+
+.custom-ceramics__article-link {
+	padding: 8px 15px;
+}
+
+@media (min-width: 768px) {
+	.custom-ceramics {
+		grid-template-columns: 1fr 1fr 2fr;
+		grid-template-rows: auto auto;
+	}
+
+	.custom-ceramics__heading {
+		grid-column: 1 / -1;
+		margin-bottom: 15px;
+	}
+
+	.custom-ceramics__image-small {
+		display: block;
+		grid-column: 1;
+		grid-row: 2;
+		background-image: image-set(
+			url('../img/ceramics.png') 1x,
+			url('../img/ceramics@2x.png') 2x,
+			url('../img/ceramics@3x.png') 3x
+		);
+		background-image: url('../img/ceramics.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		min-height: 200px;
+	}
+
+	.custom-ceramics__article--business {
+		grid-column: 2;
+		grid-row: 2;
+	}
+
+	.custom-ceramics__article--personal {
+		grid-column: 1;
+		grid-row: 3;
+	}
+
+	.custom-ceramics__image-bg {
+		display: block;
+		grid-column: 3;
+		grid-row: 2 / 4;
+		background-image: image-set(
+			url('../img/ceramics-bg.jpg') 1x,
+			url('../img/ceramics-bg@2x.jpg') 2x,
+			url('../img/ceramics-bg@3x.jpg') 3x
+		);
+		background-image: url('../img/ceramics-bg.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+}
