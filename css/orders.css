@@ -1,0 +1,140 @@
+.orders__title {
+  margin-right: 228px;
+  font-family: "Prosto One", sans-serif;
+  font-weight: 400;
+  font-size: clamp(40px, 6vw, 78px);
+  line-height: 95px;
+  color: #41572A;
+  width: 500px;
+}
+.personal__heading{
+font-family: "Prosto One", sans-serif;
+  font-weight: 400;
+  font-size: clamp(40px, 6vw, 42px);
+  line-height: 140%;
+  color: var(--secondary);
+  margin-right: auto;
+  margin-bottom: 46px;
+}
+
+.orders__paragraph {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  width: 396px;
+
+  
+}
+.order__description{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.order__personal{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+.order__commercial{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.order__partners{
+   display: flex;
+   margin-bottom: 100px;
+    
+}
+.order__logo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+.personal__description{
+    margin-left: 124px;
+}
+.tags__item{
+    font-family: 'Prosto One', Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+    color: var(--secondary);
+    padding-right: 16px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+.tags{
+  display: flex;
+  margin-bottom: 46px;
+}
+.tags__item--border{
+    border-inline: 1px solid var(--secondary);
+    padding: 4px 16px;
+    margin-right: 16px;
+}
+.order__btn{
+    width: 292px;
+    margin-top: 130px;
+}
+.order__parameters{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+.description__paragraph{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 46px;
+  width: 396px;
+}
+.parameter__headers{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #999999;
+  width: 167px;
+}
+@media (max-width: 1279px){
+.order__description{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+.orders__title{
+    width: 328px;
+    font-size: clamp(40px, 6vw, 46px);
+    line-height: 50px;
+}
+.orders__paragraph{
+    width: 328px;
+}
+.order__personal {
+    flex-direction: column;
+}
+.order__commercial{
+    flex-direction: column-reverse;
+}
+.order__partners{
+    flex-direction: column;
+}
+.personal__description{
+    margin-left: 0;
+}
+.order__logo{
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+.order__logo img{
+    width: 160px;
+}
+.description__paragraph{
+    width: 100%;
+}
+}
+

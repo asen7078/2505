@@ -83,6 +83,8 @@
 	color: var(--text-main);
 	text-decoration: none;
 }
+.main-menu__link span {
+  font-variant-numeric: lining-nums;}
 
 .main-menu__link--folder {
 	padding-right: 28px;
