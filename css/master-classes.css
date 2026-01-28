@@ -7,7 +7,7 @@
 
 .master-classes__heading {
   margin: 0;
-	margin-bottom: 15px;
+	margin-bottom: 16px;
 
 	font-family: var(--font-heading);
 	font-weight: 400;
@@ -24,22 +24,20 @@
 }
 
 .master-classes__link {
-  position: absolute;
-  top: 10px;
-  right: 0;
-
-	padding-right: 30px;
+	display: inline-block;
+	margin-bottom: 24px;
+	padding-right: 20px;
 
 	text-decoration: none;
 	color: var(--secondary);
-  background-image: url('../img/link-icon.svg');
-  background-repeat: no-repeat;
-  background-position: right;
+	background-image: url('../img/link-icon.svg');
+	background-repeat: no-repeat;
+	background-position: right center;
 }
 
 .master-classes__list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 
@@ -72,4 +70,22 @@
 
 .master-classes__item-link {
   align-self: flex-end;
+}
+
+@media (min-width: 768px) {
+	.master-classes__heading {
+		margin-bottom: 15px;
+	}
+
+	.master-classes__link {
+		position: absolute;
+		top: 10px;
+		right: 0;
+		margin-bottom: 0;
+		padding-right: 20px;
+	}
+
+	.master-classes__list {
+		grid-template-columns: repeat(4, 1fr);
+	}
 }

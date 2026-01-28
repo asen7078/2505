@@ -13,9 +13,16 @@
 </head>
 <body>
 	<nav class="main-menu container">
-		<a  href="#">
+		<button class="main-menu__burger" type="button" aria-label="Открыть меню">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<a class="main-menu__logo" href="#">
 			<img src="logo.png" width="48" height="48" alt="Логотип">
 		</a>
+		<a class="main-menu__cart" href="">Корзина (<span>0</span>)</a>
+		<div class="main-menu__overlay"></div>
 		<ul class="main-menu__list">
 			<li><a class="main-menu__link main-menu__link--folder" href="">Мастер-классы</a></li>
 			<li><a class="main-menu__link" href="">Сертификаты</a></li>
@@ -24,7 +31,6 @@
 			<li><a class="main-menu__link" href="">О нас</a></li>
 			<li><a class="main-menu__link" href="">Контакты</a></li>
 		</ul>
-		<a class="main-menu__link" href="">Корзина (<span>0</span>)</a>
 	</nav>
 	<main>
 		<section class="hero">
@@ -32,6 +38,7 @@
 			<p class="hero__lead">
 				2505 ceramics
 			</p>
+			<div class="hero__image"></div>
 			<p class="hero__description">
 				Уютное пространство в центре Вологды с мастер-классами, керамикой на заказ и изделиями ручной работы. Форматы для знакомства, творчества и особых поводов.
 			</p>
@@ -54,6 +61,7 @@
           У нас будет интересно и тем, кто впервые работает с глиной, и опытным мастерам. Мы открыты к разным идеям и всегда помогаем довести их до результата.
         </p>
       </article>
+      <div class="trust__image-small"></div>
       <article class="trust__article trust__article--soul">
         <h3 class="trust__article-heading">Создаём с душой</h3>
         <p class="trust__article-paragraph">
@@ -102,51 +110,51 @@
       <h2 class="popular-products__heading">Популярные изделия</h2>
       <a class="popular-products__link" href="">Перейти в каталог</a>
       <ul class="popular-products__list list-reset">
-        <li>
+        <li class="popular-products__item">
           <figure class="popular-products__figure">
             <picture class="popular-products__picture">
               <source type="image/avif" srcset="img/popular-product-scarlet-flower-plate.avif 1x, img/popular-product-scarlet-flower-plate@2x.avif 2x, img/popular-product-scarlet-flower-plate@3x.avif 3x">
               <source type="image/webp" srcset="img/popular-product-scarlet-flower-plate.webp 1x, img/popular-product-scarlet-flower-plate@2x.webp 2x, img/popular-product-scarlet-flower-plate@3x.webp 3x">
               <img class="popular-products__image" src="img/popular-product-scarlet-flower-plate.jpg" srcset="img/popular-product-scarlet-flower-plate.jpg 1x, img/popular-product-scarlet-flower-plate@2x.jpg 2x, img/popular-product-scarlet-flower-plate@3x.jpg 3x" alt="Светлая тарелка покрытая глазурью и редкими миниатюрными рисунками алых цветов" width="396" height="393">
             </picture>
-            <figcaption class="popular-products__figcaption">Тарелка Алый Цветочек</figcaption>
           </figure>
+          <h3 class="popular-products__figcaption">Тарелка Алый Цветочек</h3>
           <p class="popular-products__price">2 500 ₽</p>
           <button class="popular-products__button btn btn--secondary">Купить</button>
         </li>
-        <li>
+        <li class="popular-products__item">
           <figure class="popular-products__figure">
             <picture class="popular-products__picture">
               <source type="image/avif" srcset="img/popular-product-scarlet-flower-cup.avif 1x, img/popular-product-scarlet-flower-cup@2x.avif 2x, img/popular-product-scarlet-flower-cup@3x.avif 3x">
               <source type="image/webp" srcset="img/popular-product-scarlet-flower-cup.webp 1x, img/popular-product-scarlet-flower-cup@2x.webp 2x, img/popular-product-scarlet-flower-cup@3x.webp 3x">
               <img class="popular-products__image" src="img/popular-product-scarlet-flower-cup.jpg" srcset="img/popular-product-scarlet-flower-cup.jpg 1x, img/popular-product-scarlet-flower-cup@2x.jpg 2x, img/popular-product-scarlet-flower-cup@3x.jpg 3x" alt="Светлая чашка покрытая глазурью и редкими миниатюрными рисунками алых цветов" width="188" height="197">
             </picture>
-            <figcaption class="popular-products__figcaption">Чашка Алый Цветочек</figcaption>
           </figure>
+          <h3 class="popular-products__figcaption">Чашка Алый Цветочек</h3>
           <p class="popular-products__price">2 100 ₽</p>
           <button class="popular-products__button btn btn--secondary">Купить</button>
         </li>
-        <li>
+        <li class="popular-products__item">
           <figure class="popular-products__figure">
             <picture class="popular-products__picture">
               <source type="image/avif" srcset="img/popular-product-blue-flower-cup.avif 1x, img/popular-product-blue-flower-cup@2x.avif 2x, img/popular-product-blue-flower-cup@3x.avif 3x">
               <source type="image/webp" srcset="img/popular-product-blue-flower-cup.webp 1x, img/popular-product-blue-flower-cup@2x.webp 2x, img/popular-product-blue-flower-cup@3x.webp 3x">
               <img class="popular-products__image" src="img/popular-product-blue-flower-cup.jpg" srcset="img/popular-product-blue-flower-cup.jpg 1x, img/popular-product-blue-flower-cup@2x.jpg 2x, img/popular-product-blue-flower-cup@3x.jpg 3x" alt="Светлая чашка покрытая глазурью и редкими миниатюрными рисунками васильковых цветов" width="292" height="304">
             </picture>
-            <figcaption class="popular-products__figcaption">Чашка с синим цветком</figcaption>
           </figure>
+          <h3 class="popular-products__figcaption">Чашка с синим цветком</h3>
           <p class="popular-products__price">2 100 ₽</p>
           <button class="popular-products__button btn btn--secondary">Купить</button>
         </li>
-        <li>
+        <li class="popular-products__item">
           <figure class="popular-products__figure">
             <picture class="popular-products__picture">
               <source type="image/avif" srcset="img/popular-product-plate-with-horses.avif 1x, img/popular-product-plate-with-horses@2x.avif 2x, img/popular-product-plate-with-horses@3x.avif 3x">
               <source type="image/webp" srcset="img/popular-product-plate-with-horses.webp 1x, img/popular-product-plate-with-horses@2x.webp 2x, img/popular-product-plate-with-horses@3x.webp 3x">
               <img class="popular-products__image" src="img/popular-product-plate-with-horses.jpg" srcset="img/popular-product-plate-with-horses.jpg 1x, img/popular-product-plate-with-horses@2x.jpg 2x, img/popular-product-plate-with-horses@3x.jpg 3x" alt="Светлая тарелка с тёмным изображением лошадки" width="292" height="395">
             </picture>
-            <figcaption class="popular-products__figcaption">Тарелки с лошадками</figcaption>
           </figure>
+          <h3 class="popular-products__figcaption">Тарелки с лошадками</h3>
           <p class="popular-products__price">2 000 ₽</p>
           <button class="popular-products__button btn btn--secondary">Купить</button>
         </li>
@@ -251,5 +259,36 @@
 
     </div>
   </footer>
+  <script>
+    const menu = document.querySelector('.main-menu');
+    const burger = document.querySelector('.main-menu__burger');
+    const overlay = document.querySelector('.main-menu__overlay');
+
+    function toggleMenu() {
+      menu.classList.toggle('main-menu--open');
+    }
+
+    function closeMenu() {
+      menu.classList.remove('main-menu--open');
+    }
+
+    if (burger) {
+      burger.addEventListener('click', toggleMenu);
+    }
+
+    if (overlay) {
+      overlay.addEventListener('click', closeMenu);
+    }
+
+    // Закрытие меню при клике на ссылку
+    const menuLinks = document.querySelectorAll('.main-menu__link');
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth < 768) {
+          closeMenu();
+        }
+      });
+    });
+  </script>
 </body>
 </html>
