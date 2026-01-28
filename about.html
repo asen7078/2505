@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Гончарная студия 2505 ceramics — О нас</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Prosto+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<nav class="main-menu container">
+		<button class="main-menu__burger" type="button" aria-label="Открыть меню">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<a class="main-menu__logo" href="index.html">
+			<img src="logo.png" width="48" height="48" alt="Логотип">
+		</a>
+		<a class="main-menu__cart" href="cart.html">Корзина (<span id="cartCount">0</span>)</a>
+		<div class="main-menu__overlay"></div>
+		<ul class="main-menu__list">
+			<li><a class="main-menu__link main-menu__link--folder" href="">Мастер-классы</a></li>
+			<li><a class="main-menu__link" href="certificates.html">Сертификаты</a></li>
+			<li><a class="main-menu__link" href="catalog.html">Каталог</a></li>
+			<li><a class="main-menu__link" href="orders.html">На заказ</a></li>
+			<li><a class="main-menu__link main-menu__link-active" href="about.html">О нас</a></li>
+			<li><a class="main-menu__link" href="">Контакты</a></li>
+		</ul>
+	</nav>
+
+	<main class="about-page container">
+		<ul class="about-page__breadcrumbs breadcrumbs">
+			<li class="breadcrumbs__item">
+				<a class="breadcrumbs__link breadcrumbs__link--color" href="index.html">Главная</a>
+			</li>
+			<li class="breadcrumbs__item">
+				<span class="breadcrumbs__slash breadcrumbs__slash--color">/</span>
+			</li>
+			<li class="breadcrumbs__item">
+				<span class="breadcrumbs__link">О нас</span>
+			</li>
+		</ul>
+
+		<section class="about-hero">
+			<h1 class="about-hero__heading">О нас</h1>
+			<p class="about-hero__description">
+				Добро пожаловать в нашу семейную гончаную мастерскую — место, где глина оживает в ваших руках, а творчество становится отдыхом для души.
+			</p>
+			<picture class="about-hero__picture">
+				<source type="image/jpeg" srcset="img/about-us.jpg 1x, img/about-us@2x.jpg 2x, img/about-us@3x.jpg 3x">
+				<img class="about-hero__image" src="img/about-us.jpg" srcset="img/about-us.jpg 1x, img/about-us@2x.jpg 2x, img/about-us@3x.jpg 3x" alt="Гончарная мастерская 2505 ceramics" width="800" height="600">
+			</picture>
+		</section>
+
+		<section class="about-history">
+			<h2 class="about-history__heading">История мастерской</h2>
+			<div class="about-history__grid">
+				<picture class="about-history__picture about-history__picture--0">
+					<source type="image/jpeg" srcset="img/history-0.jpg 1x, img/history-0@2x.jpg 2x, img/history-0@3x.jpg 3x">
+					<img class="about-history__image" src="img/history-0.jpg" srcset="img/history-0.jpg 1x, img/history-0@2x.jpg 2x, img/history-0@3x.jpg 3x" alt="История мастерской 2505 ceramics" width="292" height="283">
+				</picture>
+
+				<div class="about-history__start">
+					<h3 class="about-history__subheading">Как всё начиналось</h3>
+					<p class="about-history__text">
+						Наша история началась в 2017 году с маленькой мастерской площадью всего 28 квадратных метров. Мы создали её вместе с мужем — из любви к гончарному делу и желания делиться этим ощущением с другими.
+					</p>
+				</div>
+
+				<picture class="about-history__picture about-history__picture--1">
+					<source type="image/jpeg" srcset="img/history-1.jpg 1x, img/history-1@2x.jpg 2x, img/history-1@3x.jpg 3x">
+					<img class="about-history__image" src="img/history-1.jpg" srcset="img/history-1.jpg 1x, img/history-1@2x.jpg 2x, img/history-1@3x.jpg 3x" alt="История мастерской 2505 ceramics" width="396" height="495">
+				</picture>
+
+				<div class="about-history__today">
+					<h3 class="about-history__subheading">2505 ceramics сегодня</h3>
+					<p class="about-history__text">
+						В 2024 году мы переехали в красивое здание в центре города в 3 минутах от Софийского собора. Постепенно мастерская выросла в узнаваемый бренд: наши мастер-классы нашли своих гостей, а керамику начали заказывать рестораны Вологды, Москвы и Санкт-Петербурга.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="about-team">
+			<h2 class="about-team__heading">Команда</h2>
+			<div class="about-team__grid">
+				<article class="about-team__member about-team__member--founders">
+					<picture class="about-team__picture">
+						<source type="image/jpeg" srcset="img/irina.jpg 1x, img/irina@2x.jpg 2x, img/irina@3x.jpg 3x">
+						<img class="about-team__image" src="img/irina.jpg" srcset="img/irina.jpg 1x, img/irina@2x.jpg 2x, img/irina@3x.jpg 3x" alt="Лазарева Ирина и Лазарев Александр" width="396" height="375">
+					</picture>
+					<h3 class="about-team__name">Лазарева Ирина и Лазарев Александр</h3>
+					<p class="about-team__role">Основатели и владельцы мастерской</p>
+				</article>
+
+				<article class="about-team__member about-team__member--anna">
+					<picture class="about-team__picture">
+						<source type="image/jpeg" srcset="img/anna.jpg 1x, img/anna@2x.jpg 2x, img/anna@3x.jpg 3x">
+						<img class="about-team__image" src="img/anna.jpg" srcset="img/anna.jpg 1x, img/anna@2x.jpg 2x, img/anna@3x.jpg 3x" alt="Гончарова Анна" width="188" height="228">
+					</picture>
+					<h3 class="about-team__name">Гончарова Анна</h3>
+					<p class="about-team__role">Мастер</p>
+				</article>
+
+				<article class="about-team__member about-team__member--yulia">
+					<picture class="about-team__picture">
+						<source type="image/jpeg" srcset="img/yulia.jpg 1x, img/yulia@2x.jpg 2x, img/yulia@3x.jpg 3x">
+						<img class="about-team__image" src="img/yulia.jpg" srcset="img/yulia.jpg 1x, img/yulia@2x.jpg 2x, img/yulia@3x.jpg 3x" alt="Молчанова Юлия" width="188" height="228">
+					</picture>
+					<h3 class="about-team__name">Молчанова Юлия</h3>
+					<p class="about-team__role">Ведущий керамист</p>
+				</article>
+
+				<article class="about-team__member about-team__member--maria">
+					<picture class="about-team__picture">
+						<source type="image/jpeg" srcset="img/maria.jpg 1x, img/maria@2x.jpg 2x, img/maria@3x.jpg 3x">
+						<img class="about-team__image" src="img/maria.jpg" srcset="img/maria.jpg 1x, img/maria@2x.jpg 2x, img/maria@3x.jpg 3x" alt="Петрова Мария" width="188" height="228">
+					</picture>
+					<h3 class="about-team__name">Петрова Мария</h3>
+					<p class="about-team__role">Администратор</p>
+				</article>
+
+				<article class="about-team__member about-team__member--olga">
+					<picture class="about-team__picture">
+						<source type="image/jpeg" srcset="img/olga.jpg 1x, img/olga@2x.jpg 2x, img/olga@3x.jpg 3x">
+						<img class="about-team__image" src="img/olga.jpg" srcset="img/olga.jpg 1x, img/olga@2x.jpg 2x, img/olga@3x.jpg 3x" alt="Иванова Ольга" width="188" height="228">
+					</picture>
+					<h3 class="about-team__name">Иванова Ольга</h3>
+					<p class="about-team__role">Мастер</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="about-monument">
+			<div class="about-monument__grid">
+				<h2 class="about-monument__heading">Памятник архитектуры</h2>
+
+				<picture class="about-monument__picture about-monument__picture--main">
+					<source type="image/jpeg" srcset="img/monument.jpg 1x, img/monument@2x.jpg 2x, img/monument@3x.jpg 3x">
+					<img class="about-monument__image" src="img/monument.jpg" srcset="img/monument.jpg 1x, img/monument@2x.jpg 2x, img/monument@3x.jpg 3x" alt="Здание на Торговой площади, 1" width="812" height="394">
+				</picture>
+
+				<p class="about-monument__text about-monument__text--first">
+					В 1825–1828 годах купец Фёдор Дмитриевич Филипов построил двухэтажный каменный особняк с мезонином.
+					<br>
+					В 1861 году к западу от дома, построенного Ф.Д. Филиповым, мещанином Игнатием Филипповичем Эдель был построен ещё один каменный двухэтажный дом эклектичной архитектуры.
+				</p>
+
+				<div class="about-monument__right">
+					<picture class="about-monument__picture about-monument__picture--side">
+						<source type="image/jpeg" srcset="img/monument-1.jpg 1x, img/monument-1@2x.jpg 2x, img/monument-1@3x.jpg 3x">
+						<img class="about-monument__image" src="img/monument-1.jpg" srcset="img/monument-1.jpg 1x, img/monument-1@2x.jpg 2x, img/monument-1@3x.jpg 3x" alt="Фрагмент памятника архитектуры" width="396" height="266">
+					</picture>
+
+					<p class="about-monument__text about-monument__text--second">
+						К 1872 году оба дома перешли во владение купеческой семьи Козловых и в 1908 году были соединены между собой каменной вставкой в два окна.
+						<br>
+						С 1916 года в здании на Торговой площади размещалось Вологодское общество сельского хозяйства (ВОСХ), созданное в 1908 году.
+						<br>
+						В 1991 году дом был отреставрирован по проекту архитектора Г.Г. Щапина и приобрёл статус памятника архитектуры регионального значения. Сейчас здесь размещаются частные организации, в том числе и наша гончарная студия.
+					</p>
+
+					<a class="about-monument__link" href="https://vologda-okn.ru/object/zhiloj-dom%2C-torgovay-ploshady-1" target="_blank" rel="noopener noreferrer">
+						Узнать подробнее
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer-wrapper container">
+			<div class="footer-address">
+				<p>Ежедневно с 11:00 до 19:00</p>
+				<address class="contacts-text">
+					Вологда, Торговая площадь, 1
+					<a href="tel:+79005347137">+7 900 534-71-37</a>
+				</address>
+			</div>
+
+			<ul class="menu-secondary clear-ul">
+				<li><a class="menu-secondary-item" href="#">О мастер-классах</a></li>
+				<li><a class="menu-secondary-item" href="certificates.html">Сертификаты</a></li>
+				<li><a class="menu-secondary-item" href="catalog.html">Каталог</a></li>
+				<li><a class="menu-secondary-item" href="orders.html">На заказ</a></li>
+				<li><a class="menu-secondary-item menu-secondary-item-active" href="about.html">О нас</a></li>
+				<li><a class="menu-secondary-item" href="#">Контакты</a></li>
+			</ul>
+
+			<div class="footer-right">
+				<h3 class="text-widget text-widget-copyright">
+					Мы в соцсетях
+				</h3>
+				<ul class="menu-social clear-ul">
+					<li><a class="menu-social-link menu-social-link-tg" href="https://t.me/ceramics2505" aria-label="Telegram">Telegram</a></li>
+					<li><a class="menu-social-link menu-social-link-vk" href="https://vk.com/ceramics2505" aria-label="ВКонтакте">ВКонтакте</a></li>
+				</ul>
+				<img class="contacts-image contacts-image-logo" src="img/footer-logo.svg" width="369" height="153" alt="Логотип">
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		const menu = document.querySelector('.main-menu');
+		const burger = document.querySelector('.main-menu__burger');
+		const overlay = document.querySelector('.main-menu__overlay');
+
+		function toggleMenu() {
+			menu.classList.toggle('main-menu--open');
+		}
+
+		function closeMenu() {
+			menu.classList.remove('main-menu--open');
+		}
+
+		if (burger) {
+			burger.addEventListener('click', toggleMenu);
+		}
+
+		if (overlay) {
+			overlay.addEventListener('click', closeMenu);
+		}
+
+		const menuLinks = document.querySelectorAll('.main-menu__link');
+		menuLinks.forEach(link => {
+			link.addEventListener('click', () => {
+				if (window.innerWidth < 768) {
+					closeMenu();
+				}
+			});
+		});
+	</script>
+</body>
+</html>
