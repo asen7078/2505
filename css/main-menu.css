@@ -1,7 +1,7 @@
 .main-menu {
 	position: relative;
 	display: grid;
-	grid-template-columns: auto 1fr auto;
+	grid-template-columns: 24px 1fr 24px;
 	align-items: center;
 	gap: 20px;
 	padding-block: 18px;
@@ -32,12 +32,16 @@
 
 .main-menu__logo {
 	justify-self: center;
+	grid-column: 2;
 }
 
 .main-menu__cart {
 	padding: 4px 8px;
 	color: var(--text-main);
 	text-decoration: none;
+	grid-column: 3;
+	justify-self: end;
+	white-space: nowrap;
 }
 
 .main-menu__overlay {
@@ -110,9 +114,10 @@
 
 @media (min-width: 768px) {
 	.main-menu {
-		display: flex;
-		justify-content: space-between;
-		grid-template-columns: none;
+		display: grid;
+		grid-template-columns: auto 1fr auto;
+		grid-template-rows: 1fr;
+		align-items: center;
 	}
 
 	.main-menu__burger {
@@ -120,24 +125,27 @@
 	}
 
 	.main-menu__logo {
-		justify-self: auto;
-	}
-
-	.main-menu__overlay {
-		display: none;
+		grid-column: 1;
+		grid-row: 1;
+		justify-self: start;
 	}
 
 	.main-menu__list {
 		position: static;
 		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
+		justify-content: center;
+		flex-wrap: nowrap;
+		gap: 8px;
 		width: auto;
 		height: auto;
 		padding: 0;
 		background: none;
 		transform: none;
 		overflow: visible;
+		grid-column: 2;
+		grid-row: 1;
+		justify-self: center;
+		align-self: center;
 	}
 
 	.main-menu__list li {
@@ -145,6 +153,20 @@
 	}
 
 	.main-menu__link {
-		padding: 4px 8px;
+		padding: 4px 20px;
+	}
+
+	.main-menu__link--folder {
+		padding-right: 28px;
+	}
+
+	.main-menu__cart {
+		grid-column: 3;
+		grid-row: 1;
+		justify-self: end;
+	}
+
+	.main-menu__overlay {
+		display: none;
 	}
 }

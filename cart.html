@@ -21,7 +21,7 @@
 		<a class="main-menu__logo" href="index.html">
 			<img src="logo.png" width="48" height="48" alt="Логотип">
 		</a>
-		<a class="main-menu__cart" href="">Корзина (<span>0</span>)</a>
+		<a class="main-menu__cart" href="cart.html">Корзина (<span id="cartCount">0</span>)</a>
 		<div class="main-menu__overlay"></div>
 		<ul class="main-menu__list">
 			<li><a class="main-menu__link main-menu__link--folder" href="">Мастер-классы</a></li>
@@ -33,7 +33,7 @@
 		</ul>
 	</nav>
 	<main class="cart container">
-		<section class="cart__empty" id="cartEmpty" style="display: none;">
+		<section class="cart__empty" id="cartEmpty">
 			<div class="cart__content">
 				<h1 class="cart__heading">Корзина пуста</h1>
 				<a class="cart__link btn" href="catalog.html">В каталог</a>
@@ -41,7 +41,7 @@
 			<div class="cart__image"></div>
 		</section>
 
-		<section class="cart__full" id="cartFull">
+		<section class="cart__full" id="cartFull" style="display: none;">
 			<h1 class="cart__title">Ваш заказ</h1>
 			<div class="cart__wrapper">
 				<div class="cart__items">
@@ -77,7 +77,7 @@
 					</fieldset>
 					<label class="cart__field">
 						<span class="cart__label">Комментарий к заказу</span>
-						<textarea name="comment" class="cart__textarea" placeholder="дополнительные пожелания"></textarea>
+						<textarea name="comment" class="cart__textarea" placeholder="Дополнительные пожелания"></textarea>
 					</label>
 					<label class="cart__checkbox">
 						<input type="checkbox" name="privacy" required>
@@ -97,7 +97,6 @@
 					Вологда, Торговая площадь, 1
 					<a href="tel:+79005347137">+7 900 534-71-37</a>
 				</address>
-				<img class="contacts-image contacts-image-bg" src="img/footer-bg.png" width="493" height="264" alt="Фоновая картинка">
 
 			</div>
 
@@ -155,8 +154,9 @@
 		});
 	</script>
 	<script>
-		// Моковые данные корзины
-		const cartData = {
+		// Данные корзины (без сохранения в localStorage)
+		// При загрузке страницы корзина содержит начальный набор товаров
+		let cartData = {
 			items: [
 				{
 					id: 1,
@@ -166,6 +166,39 @@
 					quantity: 1,
 					params: {
 						diameter: '21 см',
+						color: 'белый'
+					}
+				},
+				{
+					id: 2,
+					title: 'Кружка',
+					image: 'img/product-2.jpg',
+					price: 2100,
+					quantity: 2,
+					params: {
+						diameter: '8 см',
+						color: 'бежевый'
+					}
+				},
+				{
+					id: 4,
+					title: 'Масленка',
+					image: 'img/product-4.jpg',
+					price: 2500,
+					quantity: 1,
+					params: {
+						diameter: '12 см',
+						color: 'кремовый'
+					}
+				},
+				{
+					id: 8,
+					title: 'Ваза',
+					image: 'img/product-8.jpg',
+					price: 4500,
+					quantity: 1,
+					params: {
+						diameter: '15 см',
 						color: 'белый'
 					}
 				}
@@ -179,16 +212,22 @@
 			const cartItemsList = document.getElementById('cartItemsList');
 			const cartTotal = document.getElementById('cartTotal');
 
-			if (cartData.items.length === 0) {
-				cartEmpty.style.display = 'grid';
-				cartFull.style.display = 'none';
+			if (!cartData || !cartData.items || cartData.items.length === 0) {
+				if (cartEmpty) cartEmpty.style.display = 'grid';
+				if (cartFull) cartFull.style.display = 'none';
+				// Обновление счетчика в меню при пустой корзине
+				const cartCounter = document.querySelector('.main-menu__cart span');
+				if (cartCounter) {
+					cartCounter.textContent = '0';
+				}
 				return;
 			}
 
-			cartEmpty.style.display = 'none';
-			cartFull.style.display = 'block';
+			if (cartEmpty) cartEmpty.style.display = 'none';
+			if (cartFull) cartFull.style.display = 'block';
 
 			// Отрисовка товаров
+			if (!cartItemsList) return;
 			cartItemsList.innerHTML = '';
 			cartData.items.forEach((item, index) => {
 				const itemElement = document.createElement('div');
@@ -213,7 +252,9 @@
 
 			// Пересчет суммы
 			const total = cartData.items.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-			cartTotal.textContent = total.toLocaleString('ru-RU') + ' ₽';
+			if (cartTotal) {
+				cartTotal.textContent = total.toLocaleString('ru-RU') + ' ₽';
+			}
 
 			// Обновление счетчика в меню
 			const totalQuantity = cartData.items.reduce((sum, item) => sum + item.quantity, 0);
@@ -255,8 +296,21 @@
 			console.log('Форма отправлена', new FormData(this));
 		});
 
-		// Инициализация
-		updateCartDisplay();
+		// Инициализация после загрузки DOM
+		if (document.readyState === 'loading') {
+			document.addEventListener('DOMContentLoaded', updateCartDisplay);
+		} else {
+			updateCartDisplay();
+		}
+
+		// Обновление счетчика в меню при загрузке
+		if (cartData && cartData.items) {
+			const totalQuantity = cartData.items.reduce((sum, item) => sum + item.quantity, 0);
+			const cartCounter = document.querySelector('.main-menu__cart span');
+			if (cartCounter) {
+				cartCounter.textContent = totalQuantity;
+			}
+		}
 	</script>
 </body>
 </html>

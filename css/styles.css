@@ -98,13 +98,14 @@ section {
 	text-decoration: none;
 
 	border-width: 1.5px;
-	border-color: var(--secondary);
+	border-color: var(--primary);
 	border-style: solid;
 }
 
 .btn--secondary {
 	color: var(--secondary);
 	background-color: transparent;
+	border-color: var(--secondary);
 }
 
 
