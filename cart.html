@@ -21,13 +21,13 @@
 		<a class="main-menu__logo" href="index.html">
 			<img src="logo.png" width="48" height="48" alt="Логотип">
 		</a>
-		<a class="main-menu__cart" href="cart.html">Корзина (<span id="cartCount">0</span>)</a>
+		<a class="main-menu__cart main-menu__link-active" href="#">Корзина (<span id="cartCount">0</span>)</a>
 		<div class="main-menu__overlay"></div>
 		<ul class="main-menu__list">
 			<li><a class="main-menu__link main-menu__link--folder" href="">Мастер-классы</a></li>
 			<li><a class="main-menu__link" href="">Сертификаты</a></li>
 			<li><a class="main-menu__link" href="catalog.html">Каталог</a></li>
-			<li><a class="main-menu__link" href="">На заказ</a></li>
+			<li><a class="main-menu__link" href="orders.html">На заказ</a></li>
 			<li><a class="main-menu__link" href="">О нас</a></li>
 			<li><a class="main-menu__link" href="">Контакты</a></li>
 		</ul>
@@ -51,7 +51,7 @@
 						<span class="cart__total-price" id="cartTotal">0 ₽</span>
 					</div>
 				</div>
-				<form class="cart__form" id="cartForm">
+				<form action="https://se.ifmo.ru/~kuchin/backend/form.php" method="post" class="cart__form" id="cartForm">
 					<label class="cart__field">
 						<span class="cart__label">Имя<span class="cart__required">*</span></span>
 						<input type="text" name="name" class="cart__input" placeholder="Ваше имя" required>
@@ -83,7 +83,8 @@
 						<input type="checkbox" name="privacy" required>
 						<span>Я согласен с политикой конфиденциальности</span>
 					</label>
-					<button type="submit" class="cart__submit btn">Оформить заказ</button>
+
+					<button type="submit" class=" btn">Оформить заказ </button>
 				</form>
 			</div>
 		</section>
@@ -103,8 +104,8 @@
 			<ul class="menu-secondary clear-ul">
 				<li><a class="menu-secondary-item" href="#">О мастер-классах</a></li>
 				<li><a class="menu-secondary-item" href="#">Сертификаты</a></li>
-				<li><a class="menu-secondary-item menu-secondary-item-active" href="catalog.html">Каталог</a></li>
-				<li><a class="menu-secondary-item" href="#">На заказ</a></li>
+				<li><a class="menu-secondary-item" href="catalog.html">Каталог</a></li>
+				<li><a class="menu-secondary-item" href="orders.html">На заказ</a></li>
 				<li><a class="menu-secondary-item" href="#">О нас</a></li>
 				<li><a class="menu-secondary-item" href="#">Контакты</a></li>
 			</ul>
@@ -114,8 +115,8 @@
 					Мы в соцсетях
 				</h3>
 				<ul class="menu-social clear-ul">
-					<li><a class="menu-social-link menu-social-link-tg" href="#" aria-label="Telegram">Telegram</a></li>
-					<li><a class="menu-social-link menu-social-link-vk" href="#" aria-label="ВКонтакте">ВКонтакте</a></li>
+					<li><a class="menu-social-link menu-social-link-tg" href="https://t.me/ceramics2505" aria-label="Telegram">Telegram</a></li>
+					<li><a class="menu-social-link menu-social-link-vk" href="https://vk.com/ceramics2505" aria-label="ВКонтакте">ВКонтакте</a></li>
 				</ul>
 				<img class="contacts-image contacts-image-logo" src="img/footer-logo.svg" width="369" height="153" alt="Логотип">
 
@@ -291,8 +292,8 @@
 
 		// Обработка формы
 		document.getElementById('cartForm').addEventListener('submit', function(e) {
-			e.preventDefault();
-			// Здесь можно добавить отправку данных на сервер
+			//e.preventDefault();
+			
 			console.log('Форма отправлена', new FormData(this));
 		});
 

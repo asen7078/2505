@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка отправлена</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Prosto+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="main-menu container">
+		<button class="main-menu__burger" type="button" aria-label="Открыть меню">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<a class="main-menu__logo" href="index.html">
+			<img src="logo.png" width="48" height="48" alt="Логотип">
+		</a>
+		<a class="main-menu__cart" href="cart.html">Корзина (<span id="cartCount">0</span>)</a>
+		<div class="main-menu__overlay"></div>
+		<ul class="main-menu__list">
+			<li><a class="main-menu__link main-menu__link--folder" href="">Мастер-классы</a></li>
+			<li><a class="main-menu__link" href="">Сертификаты</a></li>
+			<li><a class="main-menu__link" href="catalog.html">Каталог</a></li>
+			<li><a class="main-menu__link" href="orders.html">На заказ</a></li>
+			<li><a class="main-menu__link" href="">О нас</a></li>
+			<li><a class="main-menu__link" href="">Контакты</a></li>
+		</ul>
+	</nav>
+    <main class="cart container">
+        <section class="cart__empty" id="cartEmpty">
+			<div class="cart__content">
+				<h1 class="cart__heading">Заявка отправлена</h1>
+				<a class="cart__link btn" href="index.html">Вернуться на главную </a>
+			</div>
+			<img src="img/good day.jpg" alt="">
+		</section>
+    </main>
+    <footer class="footer">
+		<div class="footer-wrapper container">
+
+			<div class="footer-address">
+				<p>Ежедневно с 11:00 до 19:00</p>
+				<address class="contacts-text">
+					Вологда, Торговая площадь, 1
+					<a href="tel:+79005347137">+7 900 534-71-37</a>
+				</address>
+
+			</div>
+
+			<ul class="menu-secondary clear-ul">
+				<li><a class="menu-secondary-item" href="#">О мастер-классах</a></li>
+				<li><a class="menu-secondary-item" href="#">Сертификаты</a></li>
+				<li><a class="menu-secondary-item" href="catalog.html">Каталог</a></li>
+				<li><a class="menu-secondary-item" href="orders.html">На заказ</a></li>
+				<li><a class="menu-secondary-item" href="#">О нас</a></li>
+				<li><a class="menu-secondary-item" href="#">Контакты</a></li>
+			</ul>
+
+			<div class="footer-right">
+				<h3 class="text-widget text-widget-copyright">
+					Мы в соцсетях
+				</h3>
+				<ul class="menu-social clear-ul">
+					<li><a class="menu-social-link menu-social-link-tg" href="https://t.me/ceramics2505" aria-label="Telegram">Telegram</a></li>
+					<li><a class="menu-social-link menu-social-link-vk" href="https://vk.com/ceramics2505" aria-label="ВКонтакте">ВКонтакте</a></li>
+				</ul>
+				<img class="contacts-image contacts-image-logo" src="img/footer-logo.svg" width="369" height="153" alt="Логотип">
+
+			</div>
+
+		</div>
+	</footer>
+</body>
+</html>
