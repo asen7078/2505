@@ -92,6 +92,9 @@
 	background-repeat: no-repeat;
 	background-position: center right;
 }
+.main-menu__link-active{
+	background-color: #CBD9BD;
+}
 
 .main-menu--open .main-menu__overlay {
 	opacity: 1;
